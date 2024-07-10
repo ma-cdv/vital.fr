@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITAL - Spécialiste en négoce de conserves alimentaires</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        nav {
+            background-color: #C41E3A;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            margin-bottom: 60px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #C41E3A;
+            border-bottom: 2px solid #C41E3A;
+            padding-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+        }
+        .lang-select {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .lang-select:focus {
+            outline: none;
+        }
+        .lang-select option {
+            background-color: white;
+            color: #C41E3A;
+        }
+        .catalogue-link {
+            background-color: #C41E3A;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .catalogue-link:hover {
+            background-color: #A51A30;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            .logo {
+                max-width: 150px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo-vital.png" alt="Logo VITAL" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="#produits" data-fr="Nos Produits" data-en="Our Products">Nos Produits</a></li>
+            <li><a href="#apropos" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+            <li><a href="#groupe" data-fr="Notre Groupe" data-en="Our Group">Notre Groupe</a></li>
+            <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+            <li>
+                <select id="langSelect" class="lang-select" onchange="changeLanguage(this.value)">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="accueil">
+            <h2 data-fr="Bienvenue chez VITAL" data-en="Welcome to VITAL">Bienvenue chez VITAL</h2>
+            <p data-fr="Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…)." 
+               data-en="With over 50 years of experience in the food industry, Vital has forged a leading position in the French landscape of canned food trading, with a strong focus on Vegetables, Fruits, Condiments and Seafood products, as well as in bulk trading (Olives, Gherkins, Capers, Green Pepper, Garlic...)."
+            >
+                Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…).
+            </p>
+        </section>
+        <section id="produits">
+            <h2 data-fr="Nos Produits" data-en="Our Products">Nos Produits</h2>
+            <ul>
+                <li data-fr="Légumes en conserve" data-en="Canned vegetables">Légumes en conserve</li>
+                <li data-fr="Fruits en conserve" data-en="Canned fruits">Fruits en conserve</li>
+                <li data-fr="Condiments" data-en="Condiments">Condiments</li>
+                <li data-fr="Produits de la mer" data-en="Seafood products">Produits de la mer</li>
+                <li data-fr="Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)" data-en="Bulk products (Olives, Gherkins, Capers, Green Pepper, Garlic...)">Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)</li>
+            </ul>
+            <a href="documents/CatalogueVITAL2024.pdf" class="catalogue-link" target="_blank" data-fr="Télécharger notre catalogue" data-en="Download our catalog">Télécharger notre catalogue</a>
+        </section>
+        <section id="apropos">
+            <h2 data-fr="À Propos de VITAL" data-en="About VITAL">À Propos de VITAL</h2>
+            <p data-fr="Forte de son expérience de plus de 50 ans, VITAL est devenue un acteur incontournable dans le négoce de conserves alimentaires en France. Notre expertise s'étend des légumes aux fruits, en passant par les condiments et les produits de la mer." 
+               data-en="With over 50 years of experience, VITAL has become a key player in the food canning trade in France. Our expertise extends from vegetables to fruits, including condiments and seafood products."
+            >
+                Forte de son expérience de plus de 50 ans, VITAL est devenue un acteur incontournable dans le négoce de conserves alimentaires en France. Notre expertise s'étend des légumes aux fruits, en passant par les condiments et les produits de la mer.
+            </p>
+            <p data-fr="Respecter nos engagements, garantir la sécurité de nos produits, maîtriser les processus et offrir le meilleur rapport qualité-prix sont au centre de notre démarche. Au cœur de nos valeurs se trouve l'innovation, qui nous conduit à commercialiser toujours plus de nouveaux produits, à explorer de nouveaux modes de consommation comme le Bio, afin de dynamiser le marché de la conserve alimentaire." 
+               data-en="Respecting our commitments, ensuring the safety of our products, mastering processes and offering the best value for money are at the center of our approach. At the heart of our values is innovation, which leads us to market more and more new products, to explore new consumption patterns such as organic products, in order to energize the canned food market."
+            >
+                Respecter nos engagements, garantir la sécurité de nos produits, maîtriser les processus et offrir le meilleur rapport qualité-prix sont au centre de notre démarche. Au cœur de nos valeurs se trouve l'innovation, qui nous conduit à commercialiser toujours plus de nouveaux produits, à explorer de nouveaux modes de consommation comme le Bio, afin de dynamiser le marché de la conserve alimentaire.
+            </p>
+        </section>
+        <section id="groupe">
+            <h2 data-fr="Notre Groupe" data-en="Our Group">Notre Groupe</h2>
+            <p data-fr="VITAL fait partie d'un groupe de sociétés ayant des activités complémentaires dans le secteur de l'agroalimentaire. Ce groupe détient notamment les sociétés agroindustrielles Les Conserves de Meknès-Aïcha et Marocâpres, connues pour l'excellence de leurs produits." 
+               data-en="VITAL is part of a group of companies with complementary activities in the agri-food sector. This group notably owns the agro-industrial companies Les Conserves de Meknès-Aïcha and Marocâpres, known for the excellence of their products."
+            >
+                VITAL fait partie d'un groupe de sociétés ayant des activités complémentaires dans le secteur de l'agroalimentaire. Ce groupe détient notamment les sociétés agroindustrielles Les Conserves de Meknès-Aïcha et Marocâpres, connues pour l'excellence de leurs produits.
+            </p>
+            <p data-fr="Grâce à son savoir-faire et à la qualité de ses produits, le Groupe est une référence dans le secteur agroalimentaire à l'échelle nationale marocaine mais aussi à l'international, récompensé par de nombreuses certifications (ISO 22000, IFS) et un positionnement de premier plan." 
+               data-en="Thanks to its know-how and the quality of its products, the Group is a reference in the agri-food sector on a national Moroccan scale but also internationally, rewarded by numerous certifications (ISO 22000, IFS) and a leading position."
+            >
+                Grâce à son savoir-faire et à la qualité de ses produits, le Groupe est une référence dans le secteur agroalimentaire à l'échelle nationale marocaine mais aussi à l'international, récompensé par de nombreuses certifications (ISO 22000, IFS) et un positionnement de premier plan.
+            </p>
+            <h3 data-fr="Nos Distinctions" data-en="Our Distinctions">Nos Distinctions</h3>
+            <ul>
+                <li data-fr="1er producteur mondial de câpres" data-en="World's leading producer of capers">1er producteur mondial de câpres</li>
+                <li data-fr="1er exportateur national d'huile d'olive" data-en="Leading national exporter of olive oil">1er exportateur national d'huile d'olive</li>
+                <li data-fr="1er producteur et leader national de concentré de tomates et de confitures" data-en="Leading national producer of tomato concentrate and jams">1er producteur et leader national de concentré de tomates et de confitures</li>
+            </ul>
+            <h3 data-fr="Notre Force" data-en="Our Strength">Notre Force</h3>
+            <p data-fr="Notre groupe, de par sa couverture géographique permettant une activité sur sept sites de production, maîtrise de bout en bout sa supply chain et fournit des produits d'une qualité constante grâce à des standards de production communs à toutes nos usines." 
+               data-en="Our group, through its geographical coverage allowing activity on seven production sites, controls its supply chain from end to end and provides products of consistent quality thanks to production standards common to all our factories."
+            >
+                Notre groupe, de par sa couverture géographique permettant une activité sur sept sites de production, maîtrise de bout en bout sa supply chain et fournit des produits d'une qualité constante grâce à des standards de production communs à toutes nos usines.
+            </p>
+        </section>
+        <section id="contact">
+            <h2 data-fr="Contactez-nous" data-en="Contact Us">Contactez-nous</h2>
+            <p data-fr="Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter." data-en="For more information about our products or for any inquiry, don't hesitate to contact us.">Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter.</p>
+            <p>Tél : <a href="tel:+33442105400">+33 (0) 4 42 10 54 00</a></p>
+            <p>Mail : <a href="mailto:vital@vital.fr">vital@vital.fr</a></p>
+        </section>
+    </main>
+    <footer>
+        <p data-fr="© 2024 VITAL. Tous droits réservés." data-en="© 2024 VITAL. All rights reserved.">© 2024 VITAL. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-fr][data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+            document.title = lang === 'fr' ? 
+                "VITAL - Spécialiste en négoce de conserves alimentaires" :
+                "VITAL - Specialist in canned food trading";
+        }
+
+        window.onload = function() {
+            const initialLang = 'fr';
+            document.getElementById('langSelect').value = initialLang;
+            changeLanguage(initialLang);
+        }
+    </script>
+</body>
+</html>
