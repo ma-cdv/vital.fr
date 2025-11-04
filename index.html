@@ -19,6 +19,10 @@
     <meta property="og:image" content="https://vital.fr/images/logo-vital.png">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="pt_PT">
     <meta property="og:site_name" content="VITAL">
 
     <!-- Twitter Card Meta Tags -->
@@ -46,7 +50,7 @@
             "telephone": "+33442105400",
             "email": "vital@vital.fr",
             "contactType": "Customer Service",
-            "availableLanguage": ["French", "English"]
+            "availableLanguage": ["French", "English", "Italian", "Spanish", "German", "Portuguese"]
         },
         "address": {
             "@type": "PostalAddress",
@@ -240,77 +244,102 @@
     </style>
 </head>
 <body>
-    <a href="#main" class="skip-link" data-fr="Aller au contenu principal" data-en="Skip to main content">Aller au contenu principal</a>
+    <a href="#main" class="skip-link" data-fr="Aller au contenu principal" data-en="Skip to main content" data-it="Vai al contenuto principale" data-es="Ir al contenido principal" data-de="Zum Hauptinhalt springen" data-pt="Ir para o conteúdo principal">Aller au contenu principal</a>
     <header>
         <img src="images/logo-vital.png" alt="Logo VITAL" class="logo">
     </header>
     <nav aria-label="Navigation principale">
         <ul>
-            <li><a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a></li>
-            <li><a href="#produits" data-fr="Nos Produits" data-en="Our Products">Nos Produits</a></li>
-            <li><a href="#apropos" data-fr="À Propos" data-en="About Us">À Propos</a></li>
-            <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+            <li><a href="#accueil" data-fr="Accueil" data-en="Home" data-it="Home" data-es="Inicio" data-de="Startseite" data-pt="Início">Accueil</a></li>
+            <li><a href="#produits" data-fr="Nos Produits" data-en="Our Products" data-it="I Nostri Prodotti" data-es="Nuestros Productos" data-de="Unsere Produkte" data-pt="Nossos Produtos">Nos Produits</a></li>
+            <li><a href="#apropos" data-fr="À Propos" data-en="About Us" data-it="Chi Siamo" data-es="Acerca de" data-de="Über uns" data-pt="Sobre nós">À Propos</a></li>
+            <li><a href="#contact" data-fr="Contact" data-en="Contact" data-it="Contatto" data-es="Contacto" data-de="Kontakt" data-pt="Contato">Contact</a></li>
             <li>
-                <label for="langSelect" class="sr-only" data-fr="Choisir la langue" data-en="Choose language">Choisir la langue</label>
+                <label for="langSelect" class="sr-only" data-fr="Choisir la langue" data-en="Choose language" data-it="Scegli la lingua" data-es="Elegir idioma" data-de="Sprache wählen" data-pt="Escolher idioma">Choisir la langue</label>
                 <select id="langSelect" class="lang-select" onchange="changeLanguage(this.value)" aria-label="Sélection de la langue">
                     <option value="fr">FR</option>
                     <option value="en">EN</option>
+                    <option value="it">IT</option>
+                    <option value="es">ES</option>
+                    <option value="de">DE</option>
+                    <option value="pt">PT</option>
                 </select>
             </li>
         </ul>
     </nav>
     <main id="main">
         <section id="accueil">
-            <h2 data-fr="Bienvenue chez VITAL" data-en="Welcome to VITAL">Bienvenue chez VITAL</h2>
-            <p data-fr="Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…)." 
+            <h2 data-fr="Bienvenue chez VITAL" data-en="Welcome to VITAL" data-it="Benvenuti a VITAL" data-es="Bienvenido a VITAL" data-de="Willkommen bei VITAL" data-pt="Bem-vindo à VITAL">Bienvenue chez VITAL</h2>
+            <p data-fr="Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…)."
                data-en="With over 50 years of experience in the food industry, Vital has forged a leading position in the French landscape of canned food trading, with a strong focus on Vegetables, Fruits, Condiments and Seafood products, as well as in bulk trading (Olives, Gherkins, Capers, Green Pepper, Garlic...)."
+               data-it="Con oltre 50 anni di esperienza nel settore alimentare, Vital si è ritagliata una posizione di primo piano nel panorama francese del commercio di conserve alimentari, con una forte specializzazione in Verdure, Frutta, Condimenti e Prodotti ittici, ma anche nel commercio di prodotti sfusi (Olive, Cetriolini, Capperi, Pepe Verde, Aglio...)."
+               data-es="Con más de 50 años de experiencia en el sector alimentario, Vital se ha forjado una posición destacada en el panorama francés del comercio de conservas alimentarias, con una fuerte especialización en Verduras, Frutas, Condimentos y Productos del mar, así como en el comercio a granel (Aceitunas, Pepinillos, Alcaparras, Pimienta Verde, Ajo...)."
+               data-de="Mit über 50 Jahren Erfahrung in der Lebensmittelindustrie hat sich Vital eine führende Position in der französischen Konservenhandelslandschaft erarbeitet, mit einem starken Fokus auf Gemüse, Obst, Gewürze und Meeresprodukte sowie im Großhandel (Oliven, Gewürzgurken, Kapern, grüner Pfeffer, Knoblauch...)."
+               data-pt="Com mais de 50 anos de experiência no setor alimentar, a Vital conquistou uma posição de destaque no panorama francês do comércio de conservas alimentares, com forte especialização em Vegetais, Frutas, Condimentos e Produtos do mar, bem como no comércio a granel (Azeitonas, Pepinos, Alcaparras, Pimenta Verde, Alho...)."
             >
                 Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…).
             </p>
         </section>
         <section id="produits">
-            <h2 data-fr="Nos Produits" data-en="Our Products">Nos Produits</h2>
+            <h2 data-fr="Nos Produits" data-en="Our Products" data-it="I Nostri Prodotti" data-es="Nuestros Productos" data-de="Unsere Produkte" data-pt="Nossos Produtos">Nos Produits</h2>
             <ul>
-                <li data-fr="Légumes en conserve" data-en="Canned vegetables">Légumes en conserve</li>
-                <li data-fr="Fruits en conserve" data-en="Canned fruits">Fruits en conserve</li>
-                <li data-fr="Condiments" data-en="Condiments">Condiments</li>
-                <li data-fr="Produits de la mer" data-en="Seafood products">Produits de la mer</li>
-                <li data-fr="Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)" data-en="Bulk products (Olives, Gherkins, Capers, Green Pepper, Garlic...)">Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)</li>
+                <li data-fr="Légumes en conserve" data-en="Canned vegetables" data-it="Verdure in scatola" data-es="Verduras en conserva" data-de="Gemüsekonserven" data-pt="Vegetais em conserva">Légumes en conserve</li>
+                <li data-fr="Fruits en conserve" data-en="Canned fruits" data-it="Frutta in scatola" data-es="Frutas en conserva" data-de="Obstkonserven" data-pt="Frutas em conserva">Fruits en conserve</li>
+                <li data-fr="Condiments" data-en="Condiments" data-it="Condimenti" data-es="Condimentos" data-de="Gewürze" data-pt="Condimentos">Condiments</li>
+                <li data-fr="Produits de la mer" data-en="Seafood products" data-it="Prodotti ittici" data-es="Productos del mar" data-de="Meeresprodukte" data-pt="Produtos do mar">Produits de la mer</li>
+                <li data-fr="Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)" data-en="Bulk products (Olives, Gherkins, Capers, Green Pepper, Garlic...)" data-it="Prodotti sfusi (Olive, Cetriolini, Capperi, Pepe Verde, Aglio...)" data-es="Productos a granel (Aceitunas, Pepinillos, Alcaparras, Pimienta Verde, Ajo...)" data-de="Großhandelsprodukte (Oliven, Gewürzgurken, Kapern, grüner Pfeffer, Knoblauch...)" data-pt="Produtos a granel (Azeitonas, Pepinos, Alcaparras, Pimenta Verde, Alho...)">Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)</li>
             </ul>
         </section>
         <section id="apropos">
-            <h2 data-fr="À Propos de VITAL" data-en="About VITAL">À Propos de VITAL</h2>
-            <p data-fr="Forte de son expérience de plus de 50 ans, VITAL est devenue un acteur incontournable dans le négoce de conserves alimentaires en France. Notre expertise s'étend des légumes aux fruits, en passant par les condiments et les produits de la mer." 
+            <h2 data-fr="À Propos de VITAL" data-en="About VITAL" data-it="Chi Siamo - VITAL" data-es="Acerca de VITAL" data-de="Über VITAL" data-pt="Sobre a VITAL">À Propos de VITAL</h2>
+            <p data-fr="Forte de son expérience de plus de 50 ans, VITAL est devenue un acteur incontournable dans le négoce de conserves alimentaires en France. Notre expertise s'étend des légumes aux fruits, en passant par les condiments et les produits de la mer."
                data-en="With over 50 years of experience, VITAL has become a key player in the food canning trade in France. Our expertise extends from vegetables to fruits, including condiments and seafood products."
+               data-it="Forte di oltre 50 anni di esperienza, VITAL è diventata un attore chiave nel commercio di conserve alimentari in Francia. La nostra competenza si estende dalle verdure alla frutta, compresi condimenti e prodotti ittici."
+               data-es="Con más de 50 años de experiencia, VITAL se ha convertido en un actor clave en el comercio de conservas alimentarias en Francia. Nuestra experiencia se extiende desde las verduras hasta las frutas, pasando por los condimentos y los productos del mar."
+               data-de="Mit über 50 Jahren Erfahrung ist VITAL zu einem Schlüsselakteur im Konservenhandel in Frankreich geworden. Unsere Expertise erstreckt sich von Gemüse bis Obst, einschließlich Gewürzen und Meeresprodukten."
+               data-pt="Com mais de 50 anos de experiência, a VITAL tornou-se um ator-chave no comércio de conservas alimentares na França. Nossa expertise se estende de vegetais a frutas, incluindo condimentos e produtos do mar."
             >
                 Forte de son expérience de plus de 50 ans, VITAL est devenue un acteur incontournable dans le négoce de conserves alimentaires en France. Notre expertise s'étend des légumes aux fruits, en passant par les condiments et les produits de la mer.
             </p>
-            <p data-fr="Respecter nos engagements, garantir la sécurité de nos produits, maîtriser les processus et offrir le meilleur rapport qualité-prix sont au centre de notre démarche. Au cœur de nos valeurs se trouve l'innovation, qui nous conduit à commercialiser toujours plus de nouveaux produits, à explorer de nouveaux modes de consommation comme le Bio, afin de dynamiser le marché de la conserve alimentaire." 
+            <p data-fr="Respecter nos engagements, garantir la sécurité de nos produits, maîtriser les processus et offrir le meilleur rapport qualité-prix sont au centre de notre démarche. Au cœur de nos valeurs se trouve l'innovation, qui nous conduit à commercialiser toujours plus de nouveaux produits, à explorer de nouveaux modes de consommation comme le Bio, afin de dynamiser le marché de la conserve alimentaire."
                data-en="Respecting our commitments, ensuring the safety of our products, mastering processes and offering the best value for money are at the center of our approach. At the heart of our values is innovation, which leads us to market more and more new products, to explore new consumption patterns such as organic products, in order to energize the canned food market."
+               data-it="Rispettare i nostri impegni, garantire la sicurezza dei nostri prodotti, padroneggiare i processi e offrire il miglior rapporto qualità-prezzo sono al centro del nostro approccio. Al centro dei nostri valori c'è l'innovazione, che ci porta a commercializzare sempre più nuovi prodotti, ad esplorare nuovi modelli di consumo come il biologico, al fine di dinamizzare il mercato delle conserve alimentari."
+               data-es="Respetar nuestros compromisos, garantizar la seguridad de nuestros productos, dominar los procesos y ofrecer la mejor relación calidad-precio están en el centro de nuestro enfoque. En el corazón de nuestros valores está la innovación, que nos lleva a comercializar cada vez más productos nuevos, a explorar nuevos patrones de consumo como los productos orgánicos, para dinamizar el mercado de las conservas alimentarias."
+               data-de="Die Einhaltung unserer Verpflichtungen, die Gewährleistung der Sicherheit unserer Produkte, die Beherrschung der Prozesse und das beste Preis-Leistungs-Verhältnis stehen im Mittelpunkt unseres Ansatzes. Im Herzen unserer Werte steht Innovation, die uns dazu führt, immer mehr neue Produkte zu vermarkten, neue Verbrauchsmuster wie Bio-Produkte zu erkunden, um den Konservenmarkt zu beleben."
+               data-pt="Respeitar nossos compromissos, garantir a segurança de nossos produtos, dominar os processos e oferecer o melhor custo-benefício estão no centro da nossa abordagem. No coração de nossos valores está a inovação, que nos leva a comercializar cada vez mais produtos novos, a explorar novos padrões de consumo como produtos orgânicos, a fim de dinamizar o mercado de conservas alimentares."
             >
                 Respecter nos engagements, garantir la sécurité de nos produits, maîtriser les processus et offrir le meilleur rapport qualité-prix sont au centre de notre démarche. Au cœur de nos valeurs se trouve l'innovation, qui nous conduit à commercialiser toujours plus de nouveaux produits, à explorer de nouveaux modes de consommation comme le Bio, afin de dynamiser le marché de la conserve alimentaire.
             </p>
         </section>
         <section id="contact">
-            <h2 data-fr="Contactez-nous" data-en="Contact Us">Contactez-nous</h2>
-            <p data-fr="Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter." data-en="For more information about our products or for any inquiry, don't hesitate to contact us.">Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter.</p>
+            <h2 data-fr="Contactez-nous" data-en="Contact Us" data-it="Contattateci" data-es="Contáctenos" data-de="Kontaktieren Sie uns" data-pt="Entre em contato">Contactez-nous</h2>
+            <p data-fr="Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter." data-en="For more information about our products or for any inquiry, don't hesitate to contact us." data-it="Per ulteriori informazioni sui nostri prodotti o per qualsiasi richiesta, non esitate a contattarci." data-es="Para obtener más información sobre nuestros productos o para cualquier consulta, no dude en contactarnos." data-de="Für weitere Informationen über unsere Produkte oder für jegliche Anfragen zögern Sie nicht, uns zu kontaktieren." data-pt="Para mais informações sobre nossos produtos ou para qualquer pergunta, não hesite em nos contatar.">Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter.</p>
             <p>Tél : <a href="tel:+33442105400">+33 (0) 4 42 10 54 00</a></p>
             <p>Mail : <a href="mailto:vital@vital.fr">vital@vital.fr</a></p>
         </section>
     </main>
     <footer>
-        <p data-fr="© 2024 VITAL. Tous droits réservés." data-en="© 2024 VITAL. All rights reserved.">© 2024 VITAL. Tous droits réservés.</p>
+        <p data-fr="© 2024 VITAL. Tous droits réservés." data-en="© 2024 VITAL. All rights reserved." data-it="© 2024 VITAL. Tutti i diritti riservati." data-es="© 2024 VITAL. Todos los derechos reservados." data-de="© 2024 VITAL. Alle Rechte vorbehalten." data-pt="© 2024 VITAL. Todos os direitos reservados.">© 2024 VITAL. Tous droits réservés.</p>
     </footer>
 
     <script>
         function changeLanguage(lang) {
             document.documentElement.lang = lang;
-            document.querySelectorAll('[data-fr][data-en]').forEach(el => {
-                el.textContent = el.getAttribute(`data-${lang}`);
+            document.querySelectorAll('[data-fr]').forEach(el => {
+                const translation = el.getAttribute(`data-${lang}`);
+                if (translation) {
+                    el.textContent = translation;
+                }
             });
-            document.title = lang === 'fr' ? 
-                "VITAL - Spécialiste en négoce de conserves alimentaires" :
-                "VITAL - Specialist in canned food trading";
+            const titles = {
+                'fr': "VITAL - Spécialiste en négoce de conserves alimentaires",
+                'en': "VITAL - Specialist in canned food trading",
+                'it': "VITAL - Specialista nel commercio di conserve alimentari",
+                'es': "VITAL - Especialista en comercio de conservas alimentarias",
+                'de': "VITAL - Spezialist für Konservenhandel",
+                'pt': "VITAL - Especialista em comércio de conservas alimentares"
+            };
+            document.title = titles[lang] || titles['fr'];
         }
 
         window.onload = function() {
