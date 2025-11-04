@@ -4,6 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VITAL - Spécialiste en négoce de conserves alimentaires</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="VITAL, expert depuis plus de 50 ans dans le négoce de conserves alimentaires en France. Spécialiste en légumes, fruits, condiments, produits de la mer et vrac (olives, cornichons, câpres).">
+    <meta name="keywords" content="conserves alimentaires, négoce conserves, légumes conserve, fruits conserve, condiments, produits mer, olives vrac, cornichons, câpres, VITAL, alimentation France">
+    <meta name="author" content="VITAL">
+    <link rel="canonical" href="https://vital.fr/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VITAL - Spécialiste en négoce de conserves alimentaires">
+    <meta property="og:description" content="Expert depuis plus de 50 ans dans le négoce de conserves alimentaires : légumes, fruits, condiments, produits de la mer et vrac.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vital.fr/">
+    <meta property="og:image" content="https://vital.fr/images/logo-vital.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="VITAL">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="VITAL - Spécialiste en négoce de conserves alimentaires">
+    <meta name="twitter:description" content="Expert depuis plus de 50 ans dans le négoce de conserves alimentaires : légumes, fruits, condiments, produits de la mer et vrac.">
+    <meta name="twitter:image" content="https://vital.fr/images/logo-vital.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-vital.png">
+    <link rel="apple-touch-icon" href="images/logo-vital.png">
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VITAL",
+        "url": "https://vital.fr",
+        "logo": "https://vital.fr/images/logo-vital.png",
+        "description": "Expert depuis plus de 50 ans dans le négoce de conserves alimentaires en France : légumes, fruits, condiments, produits de la mer et vrac.",
+        "foundingDate": "1974",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+33442105400",
+            "email": "vital@vital.fr",
+            "contactType": "Customer Service",
+            "availableLanguage": ["French", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR"
+        },
+        "sameAs": [
+            "https://vital.fr"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Produits VITAL",
+            "itemListElement": [
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Légumes en conserve",
+                    "itemListElement": []
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Fruits en conserve",
+                    "itemListElement": []
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Condiments",
+                    "itemListElement": []
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Produits de la mer",
+                    "itemListElement": []
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Produits en vrac",
+                    "itemListElement": []
+                }
+            ]
+        }
+    }
+    </script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -46,6 +131,10 @@
             text-decoration: none;
             font-weight: bold;
         }
+        nav ul li a:focus {
+            outline: 3px solid white;
+            outline-offset: 2px;
+        }
         main {
             padding: 20px;
             margin-bottom: 60px;
@@ -77,7 +166,8 @@
             cursor: pointer;
         }
         .lang-select:focus {
-            outline: none;
+            outline: 3px solid white;
+            outline-offset: 2px;
         }
         .lang-select option {
             background-color: white;
@@ -95,6 +185,38 @@
         }
         .catalogue-link:hover {
             background-color: #A51A30;
+        }
+        .catalogue-link:focus {
+            outline: 3px solid #C41E3A;
+            outline-offset: 3px;
+        }
+        a:focus {
+            outline: 2px solid #C41E3A;
+            outline-offset: 2px;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #C41E3A;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
         }
 
         @media (max-width: 768px) {
@@ -118,24 +240,26 @@
     </style>
 </head>
 <body>
+    <a href="#main" class="skip-link" data-fr="Aller au contenu principal" data-en="Skip to main content">Aller au contenu principal</a>
     <header>
         <img src="images/logo-vital.png" alt="Logo VITAL" class="logo">
     </header>
-    <nav>
+    <nav aria-label="Navigation principale">
         <ul>
             <li><a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a></li>
             <li><a href="#produits" data-fr="Nos Produits" data-en="Our Products">Nos Produits</a></li>
             <li><a href="#apropos" data-fr="À Propos" data-en="About Us">À Propos</a></li>
             <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
             <li>
-                <select id="langSelect" class="lang-select" onchange="changeLanguage(this.value)">
+                <label for="langSelect" class="sr-only" data-fr="Choisir la langue" data-en="Choose language">Choisir la langue</label>
+                <select id="langSelect" class="lang-select" onchange="changeLanguage(this.value)" aria-label="Sélection de la langue">
                     <option value="fr">FR</option>
                     <option value="en">EN</option>
                 </select>
             </li>
         </ul>
     </nav>
-    <main>
+    <main id="main">
         <section id="accueil">
             <h2 data-fr="Bienvenue chez VITAL" data-en="Welcome to VITAL">Bienvenue chez VITAL</h2>
             <p data-fr="Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…)." 

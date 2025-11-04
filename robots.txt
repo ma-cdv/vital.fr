@@ -1,0 +1,7 @@
+# robots.txt pour vital.fr
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vital.fr/sitemap.xml
