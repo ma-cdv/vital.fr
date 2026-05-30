@@ -3,10 +3,13 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://vital.fr/</loc>
-        <lastmod>2024-11-04</lastmod>
+        <lastmod>2026-05-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://vital.fr/" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://vital.fr/" />
+        <xhtml:link rel="alternate" hreflang="fr"        href="https://vital.fr/"/>
+        <xhtml:link rel="alternate" hreflang="en"        href="https://vital.fr/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="es"        href="https://vital.fr/?lang=es"/>
+        <xhtml:link rel="alternate" hreflang="zh"        href="https://vital.fr/?lang=zh"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://vital.fr/"/>
     </url>
 </urlset>

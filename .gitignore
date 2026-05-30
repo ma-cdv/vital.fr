@@ -1,0 +1,6 @@
+# Fichiers de travail locaux — pas à pousser sur GitHub
+_assets/
+.DS_Store
+
+# Sauvegarde du logo original
+images/logo-vital-original-bak.png

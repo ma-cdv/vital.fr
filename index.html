@@ -3,350 +3,841 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VITAL - Spécialiste en négoce de conserves alimentaires</title>
+    <title data-title-fr="VITAL — Grossiste importateur de conserves alimentaires | Martin's, olives, thon, condiments"
+           data-title-en="VITAL — Wholesale importer of canned food | Martin's, olives, tuna, condiments"
+           data-title-es="VITAL — Mayorista importador de conservas | Martin's, aceitunas, atún, condimentos"
+           data-title-zh="VITAL — 食品罐头批发商和进口商 | Martin's、橄榄、金枪鱼、调味品">VITAL — Grossiste importateur de conserves alimentaires | Martin's, olives, thon, condiments</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="VITAL, expert depuis plus de 50 ans dans le négoce de conserves alimentaires en France. Spécialiste en légumes, fruits, condiments, produits de la mer et vrac (olives, cornichons, câpres).">
-    <meta name="keywords" content="conserves alimentaires, négoce conserves, légumes conserve, fruits conserve, condiments, produits mer, olives vrac, cornichons, câpres, VITAL, alimentation France">
-    <meta name="author" content="VITAL">
+    <!-- ============ SEO core ============ -->
+    <meta name="description" content="VITAL, grossiste et importateur français de conserves alimentaires depuis 1966. Marque Martin's, olives, cornichons, câpres, thon, sardines, condiments, conserves en vrac. Plateforme de 7 000 m² à Vitrolles, 1000+ containers/an, 700 références.">
+    <meta name="keywords" content="VITAL, vital conserves, grossiste conserves alimentaires, importateur conserves France, Martin's International, conserves en vrac, olives en vrac, cornichons, câpres, thon listao, thon albacore, sardines, condiments, légumes en conserve, fruits en conserve, négoce alimentaire, import export France, conserverie, plateforme logistique Vitrolles">
+    <meta name="author" content="VITAL SAS">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="geo.region" content="FR-13">
+    <meta name="geo.placename" content="Vitrolles">
+    <meta name="geo.position" content="43.460;5.247">
+    <meta name="ICBM" content="43.460, 5.247">
     <link rel="canonical" href="https://vital.fr/">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="VITAL - Spécialiste en négoce de conserves alimentaires">
-    <meta property="og:description" content="Expert depuis plus de 50 ans dans le négoce de conserves alimentaires : légumes, fruits, condiments, produits de la mer et vrac.">
+    <!-- ============ hreflang — 4 langues ============ -->
+    <link rel="alternate" hreflang="fr"      href="https://vital.fr/">
+    <link rel="alternate" hreflang="en"      href="https://vital.fr/?lang=en">
+    <link rel="alternate" hreflang="es"      href="https://vital.fr/?lang=es">
+    <link rel="alternate" hreflang="zh"      href="https://vital.fr/?lang=zh">
+    <link rel="alternate" hreflang="x-default" href="https://vital.fr/">
+
+    <!-- ============ Open Graph (Facebook, LinkedIn, WhatsApp…) ============ -->
+    <meta property="og:title" content="VITAL — Grossiste importateur de conserves | Martin's, olives, thon, condiments">
+    <meta property="og:description" content="Grossiste et importateur français de conserves alimentaires depuis 1966 : marque Martin's International, olives en vrac, cornichons, câpres, thon, sardines, condiments. 700 références, 1000+ containers réceptionnés par an.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vital.fr/">
-    <meta property="og:image" content="https://vital.fr/images/logo-vital.png">
+    <meta property="og:image" content="https://vital.fr/images/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Catalogue VITAL 2026 — conserves Martin's, olives, thon, condiments">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:locale:alternate" content="en_US">
-    <meta property="og:locale:alternate" content="it_IT">
     <meta property="og:locale:alternate" content="es_ES">
-    <meta property="og:locale:alternate" content="de_DE">
-    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:locale:alternate" content="zh_CN">
     <meta property="og:site_name" content="VITAL">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="VITAL - Spécialiste en négoce de conserves alimentaires">
-    <meta name="twitter:description" content="Expert depuis plus de 50 ans dans le négoce de conserves alimentaires : légumes, fruits, condiments, produits de la mer et vrac.">
-    <meta name="twitter:image" content="https://vital.fr/images/logo-vital.png">
+    <!-- ============ Twitter / X card ============ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VITAL — Grossiste importateur de conserves | Martin's, olives, thon">
+    <meta name="twitter:description" content="Grossiste français de conserves alimentaires depuis 1966 : Martin's, olives en vrac, cornichons, câpres, thon, sardines, condiments. 700 références, 1000+ containers/an.">
+    <meta name="twitter:image" content="https://vital.fr/images/og-cover.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo-vital.png">
-    <link rel="apple-touch-icon" href="images/logo-vital.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="images/favicon-180.png">
+    <link rel="apple-touch-icon" href="images/favicon-180.png">
 
-    <!-- Structured Data JSON-LD -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..600;1,300..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Leaflet (carte interactive, tuiles OpenStreetMap — no API key) -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="">
+
+    <!-- ============ Structured data — schema.org ============
+         Two graphs: Organization (the company) + LocalBusiness/Wholesaler
+         (the physical établissement in Vitrolles). Google merges them
+         and surfaces the rich result in knowledge panels + local pack. -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "VITAL",
-        "url": "https://vital.fr",
-        "logo": "https://vital.fr/images/logo-vital.png",
-        "description": "Expert depuis plus de 50 ans dans le négoce de conserves alimentaires en France : légumes, fruits, condiments, produits de la mer et vrac.",
-        "foundingDate": "1974",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+33442105400",
-            "email": "vital@vital.fr",
-            "contactType": "Customer Service",
-            "availableLanguage": ["French", "English", "Italian", "Spanish", "German", "Portuguese"]
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "FR"
-        },
-        "sameAs": [
-            "https://vital.fr"
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Produits VITAL",
-            "itemListElement": [
-                {
-                    "@type": "OfferCatalog",
-                    "name": "Légumes en conserve",
-                    "itemListElement": []
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://vital.fr/#organization",
+                "name": "VITAL",
+                "legalName": "VITAL SAS",
+                "alternateName": ["Vital Vitrolles", "Vital conserves"],
+                "url": "https://vital.fr/",
+                "logo": "https://vital.fr/images/logo-vital.svg",
+                "description": "Grossiste et importateur français de conserves alimentaires depuis 1966 : marque Martin's International, olives en vrac, cornichons, câpres, thon, sardines, condiments, légumes et fruits en conserve.",
+                "foundingDate": "1966-02-28",
+                "founder": { "@type": "Person", "name": "Simon Devico" },
+                "vatID": "FR95636680415",
+                "taxID": "636680415",
+                "identifier": [
+                    { "@type": "PropertyValue", "propertyID": "SIREN", "value": "636680415" },
+                    { "@type": "PropertyValue", "propertyID": "RCS",   "value": "Salon-de-Provence 636 680 415" }
+                ],
+                "knowsLanguage": ["fr", "en", "es", "zh"],
+                "brand": [
+                    { "@type": "Brand", "name": "Martin's International" },
+                    { "@type": "Brand", "name": "Vital" },
+                    { "@type": "Brand", "name": "Vitaly's" }
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+33-4-42-10-54-00",
+                    "email": "vital@vital.fr",
+                    "contactType": "Customer Service",
+                    "areaServed": ["FR", "EU", "MA", "DZ", "TN"],
+                    "availableLanguage": ["French", "English", "Spanish", "Chinese"]
                 },
-                {
-                    "@type": "OfferCatalog",
-                    "name": "Fruits en conserve",
-                    "itemListElement": []
-                },
-                {
-                    "@type": "OfferCatalog",
-                    "name": "Condiments",
-                    "itemListElement": []
-                },
-                {
-                    "@type": "OfferCatalog",
-                    "name": "Produits de la mer",
-                    "itemListElement": []
-                },
-                {
-                    "@type": "OfferCatalog",
-                    "name": "Produits en vrac",
-                    "itemListElement": []
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "17 rue de Copenhague, ZI Les Estroublans",
+                    "postalCode": "13127",
+                    "addressLocality": "Vitrolles",
+                    "addressRegion": "Provence-Alpes-Côte d'Azur",
+                    "addressCountry": "FR"
                 }
-            ]
-        }
+            },
+            {
+                "@type": ["LocalBusiness", "Wholesaler", "FoodEstablishment"],
+                "@id": "https://vital.fr/#establishment",
+                "parentOrganization": { "@id": "https://vital.fr/#organization" },
+                "name": "VITAL — Plateforme logistique Vitrolles",
+                "image": "https://vital.fr/images/og-cover.jpg",
+                "url": "https://vital.fr/",
+                "telephone": "+33-4-42-10-54-00",
+                "email": "vital@vital.fr",
+                "priceRange": "B2B",
+                "currenciesAccepted": "EUR",
+                "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "08:30",
+                    "closes": "17:30"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "17 rue de Copenhague, ZI Les Estroublans",
+                    "postalCode": "13127",
+                    "addressLocality": "Vitrolles",
+                    "addressRegion": "Provence-Alpes-Côte d'Azur",
+                    "addressCountry": "FR"
+                },
+                "geo": { "@type": "GeoCoordinates", "latitude": 43.460, "longitude": 5.247 },
+                "areaServed": [
+                    { "@type": "Country", "name": "France" },
+                    { "@type": "Place", "name": "Europe" },
+                    { "@type": "Place", "name": "Afrique du Nord" }
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Catalogue VITAL 2026",
+                    "itemListElement": [
+                        { "@type": "OfferCatalog", "name": "Produits de la mer", "description": "Thon listao, thon albacore, sardine." },
+                        { "@type": "OfferCatalog", "name": "Condiments",         "description": "Olives, câpres, cornichons, poivre vert, ail." },
+                        { "@type": "OfferCatalog", "name": "Fruits en conserve", "description": "Ananas, litchis, poires, cocktail de fruits, pamplemousse, mandarines." },
+                        { "@type": "OfferCatalog", "name": "Légumes en conserve","description": "Artichaut, maïs, cœur de palmier, tomate, oignon, betterave." },
+                        { "@type": "OfferCatalog", "name": "Produits en vrac",   "description": "Olives, cornichons, poivre vert, citrons beldi, ail en saumure, poivrons." }
+                    ]
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://vital.fr/#website",
+                "url": "https://vital.fr/",
+                "name": "VITAL",
+                "description": "Grossiste importateur de conserves alimentaires — Martin's, olives, thon, condiments.",
+                "publisher": { "@id": "https://vital.fr/#organization" },
+                "inLanguage": ["fr", "en", "es", "zh"]
+            }
+        ]
     }
     </script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: white;
-            text-align: center;
-            padding: 1rem;
-            border-bottom: 2px solid #e0e0e0;
-        }
-        .logo {
-            max-width: 200px;
-            height: auto;
-        }
-        nav {
-            background-color: #C41E3A;
-            color: white;
-            padding: 0.5rem;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 5px 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:focus {
-            outline: 3px solid white;
-            outline-offset: 2px;
-        }
-        main {
-            padding: 20px;
-            margin-bottom: 60px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #C41E3A;
-            border-bottom: 2px solid #C41E3A;
-            padding-bottom: 10px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-            width: 100%;
-        }
-        .lang-select {
-            background-color: transparent;
-            color: white;
-            border: 1px solid white;
-            padding: 5px;
-            cursor: pointer;
-        }
-        .lang-select:focus {
-            outline: 3px solid white;
-            outline-offset: 2px;
-        }
-        .lang-select option {
-            background-color: white;
-            color: #C41E3A;
-        }
-        .catalogue-link {
-            background-color: #C41E3A;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .catalogue-link:hover {
-            background-color: #A51A30;
-        }
-        .catalogue-link:focus {
-            outline: 3px solid #C41E3A;
-            outline-offset: 3px;
-        }
-        a:focus {
-            outline: 2px solid #C41E3A;
-            outline-offset: 2px;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #C41E3A;
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 100;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                font-size: 16px;
-            }
-            .logo {
-                max-width: 150px;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav ul li {
-                margin: 5px 0;
-            }
-            main {
-                padding: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <a href="#main" class="skip-link" data-fr="Aller au contenu principal" data-en="Skip to main content" data-it="Vai al contenuto principale" data-es="Ir al contenido principal" data-de="Zum Hauptinhalt springen" data-pt="Ir para o conteúdo principal">Aller au contenu principal</a>
-    <header>
-        <img src="images/logo-vital.png" alt="Logo VITAL" class="logo">
-    </header>
-    <nav aria-label="Navigation principale">
-        <ul>
-            <li><a href="#accueil" data-fr="Accueil" data-en="Home" data-it="Home" data-es="Inicio" data-de="Startseite" data-pt="Início">Accueil</a></li>
-            <li><a href="#produits" data-fr="Nos Produits" data-en="Our Products" data-it="I Nostri Prodotti" data-es="Nuestros Productos" data-de="Unsere Produkte" data-pt="Nossos Produtos">Nos Produits</a></li>
-            <li><a href="#apropos" data-fr="À Propos" data-en="About Us" data-it="Chi Siamo" data-es="Acerca de" data-de="Über uns" data-pt="Sobre nós">À Propos</a></li>
-            <li><a href="#contact" data-fr="Contact" data-en="Contact" data-it="Contatto" data-es="Contacto" data-de="Kontakt" data-pt="Contato">Contact</a></li>
-            <li>
-                <label for="langSelect" class="sr-only" data-fr="Choisir la langue" data-en="Choose language" data-it="Scegli la lingua" data-es="Elegir idioma" data-de="Sprache wählen" data-pt="Escolher idioma">Choisir la langue</label>
-                <select id="langSelect" class="lang-select" onchange="changeLanguage(this.value)" aria-label="Sélection de la langue">
-                    <option value="fr">FR</option>
-                    <option value="en">EN</option>
-                    <option value="it">IT</option>
-                    <option value="es">ES</option>
-                    <option value="de">DE</option>
-                    <option value="pt">PT</option>
-                </select>
-            </li>
-        </ul>
-    </nav>
-    <main id="main">
-        <section id="accueil">
-            <h2 data-fr="Bienvenue chez VITAL" data-en="Welcome to VITAL" data-it="Benvenuti a VITAL" data-es="Bienvenido a VITAL" data-de="Willkommen bei VITAL" data-pt="Bem-vindo à VITAL">Bienvenue chez VITAL</h2>
-            <p data-fr="Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…)."
-               data-en="With over 50 years of experience in the food industry, Vital has forged a leading position in the French landscape of canned food trading, with a strong focus on Vegetables, Fruits, Condiments and Seafood products, as well as in bulk trading (Olives, Gherkins, Capers, Green Pepper, Garlic...)."
-               data-it="Con oltre 50 anni di esperienza nel settore alimentare, Vital si è ritagliata una posizione di primo piano nel panorama francese del commercio di conserve alimentari, con una forte specializzazione in Verdure, Frutta, Condimenti e Prodotti ittici, ma anche nel commercio di prodotti sfusi (Olive, Cetriolini, Capperi, Pepe Verde, Aglio...)."
-               data-es="Con más de 50 años de experiencia en el sector alimentario, Vital se ha forjado una posición destacada en el panorama francés del comercio de conservas alimentarias, con una fuerte especialización en Verduras, Frutas, Condimentos y Productos del mar, así como en el comercio a granel (Aceitunas, Pepinillos, Alcaparras, Pimienta Verde, Ajo...)."
-               data-de="Mit über 50 Jahren Erfahrung in der Lebensmittelindustrie hat sich Vital eine führende Position in der französischen Konservenhandelslandschaft erarbeitet, mit einem starken Fokus auf Gemüse, Obst, Gewürze und Meeresprodukte sowie im Großhandel (Oliven, Gewürzgurken, Kapern, grüner Pfeffer, Knoblauch...)."
-               data-pt="Com mais de 50 anos de experiência no setor alimentar, a Vital conquistou uma posição de destaque no panorama francês do comércio de conservas alimentares, com forte especialização em Vegetais, Frutas, Condimentos e Produtos do mar, bem como no comércio a granel (Azeitonas, Pepinos, Alcaparras, Pimenta Verde, Alho...)."
-            >
-                Avec plus de 50 ans d'expérience dans le secteur alimentaire, Vital s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées, avec un ancrage fort sur les Légumes, les Fruits, les Condiments et les Produits de la mer, mais également dans le négoce de vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail…).
-            </p>
-        </section>
-        <section id="produits">
-            <h2 data-fr="Nos Produits" data-en="Our Products" data-it="I Nostri Prodotti" data-es="Nuestros Productos" data-de="Unsere Produkte" data-pt="Nossos Produtos">Nos Produits</h2>
-            <ul>
-                <li data-fr="Légumes en conserve" data-en="Canned vegetables" data-it="Verdure in scatola" data-es="Verduras en conserva" data-de="Gemüsekonserven" data-pt="Vegetais em conserva">Légumes en conserve</li>
-                <li data-fr="Fruits en conserve" data-en="Canned fruits" data-it="Frutta in scatola" data-es="Frutas en conserva" data-de="Obstkonserven" data-pt="Frutas em conserva">Fruits en conserve</li>
-                <li data-fr="Condiments" data-en="Condiments" data-it="Condimenti" data-es="Condimentos" data-de="Gewürze" data-pt="Condimentos">Condiments</li>
-                <li data-fr="Produits de la mer" data-en="Seafood products" data-it="Prodotti ittici" data-es="Productos del mar" data-de="Meeresprodukte" data-pt="Produtos do mar">Produits de la mer</li>
-                <li data-fr="Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)" data-en="Bulk products (Olives, Gherkins, Capers, Green Pepper, Garlic...)" data-it="Prodotti sfusi (Olive, Cetriolini, Capperi, Pepe Verde, Aglio...)" data-es="Productos a granel (Aceitunas, Pepinillos, Alcaparras, Pimienta Verde, Ajo...)" data-de="Großhandelsprodukte (Oliven, Gewürzgurken, Kapern, grüner Pfeffer, Knoblauch...)" data-pt="Produtos a granel (Azeitonas, Pepinos, Alcaparras, Pimenta Verde, Alho...)">Produits en vrac (Olives, Cornichons, Câpres, Poivre Vert, Ail...)</li>
+<a href="#main" class="skip-link"
+   data-fr="Aller au contenu principal" data-en="Skip to main content" data-es="Ir al contenido principal" data-zh="跳转到主要内容">Aller au contenu principal</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header">
+    <div class="container">
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="/" class="nav-logo">
+                <img src="images/logo-vital.svg" alt="VITAL">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#top" class="active" data-scroll-top
+                       data-fr="Accueil" data-en="Home" data-es="Inicio" data-zh="首页">Accueil</a></li>
+                <li><a href="#produits-preview"
+                       data-fr="Notre gamme" data-en="Our range" data-es="Nuestra gama" data-zh="我们的产品线">Notre gamme</a></li>
+                <li><a href="#a-propos"
+                       data-fr="Notre histoire" data-en="Our story" data-es="Nuestra historia" data-zh="我们的故事">Notre histoire</a></li>
+                <li><a href="#engagements"
+                       data-fr="Nos engagements" data-en="Our commitments" data-es="Nuestros compromisos" data-zh="我们的承诺">Nos engagements</a></li>
+                <li><a href="#contact" data-modal="contact"
+                       data-fr="Nous contacter" data-en="Contact us" data-es="Contáctenos" data-zh="联系我们">Nous contacter</a></li>
+                <li>
+                    <div class="lang-switch" role="group" aria-label="Langue">
+                        <button type="button" data-lang="fr" class="active" aria-pressed="true">FR</button>
+                        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+                        <button type="button" data-lang="zh" aria-pressed="false" lang="zh">中</button>
+                    </div>
+                </li>
             </ul>
-        </section>
-        <section id="apropos">
-            <h2 data-fr="À Propos de VITAL" data-en="About VITAL" data-it="Chi Siamo - VITAL" data-es="Acerca de VITAL" data-de="Über VITAL" data-pt="Sobre a VITAL">À Propos de VITAL</h2>
-            <p data-fr="Forte de son expérience de plus de 50 ans, VITAL est devenue un acteur incontournable dans le négoce de conserves alimentaires en France. Notre expertise s'étend des légumes aux fruits, en passant par les condiments et les produits de la mer."
-               data-en="With over 50 years of experience, VITAL has become a key player in the food canning trade in France. Our expertise extends from vegetables to fruits, including condiments and seafood products."
-               data-it="Forte di oltre 50 anni di esperienza, VITAL è diventata un attore chiave nel commercio di conserve alimentari in Francia. La nostra competenza si estende dalle verdure alla frutta, compresi condimenti e prodotti ittici."
-               data-es="Con más de 50 años de experiencia, VITAL se ha convertido en un actor clave en el comercio de conservas alimentarias en Francia. Nuestra experiencia se extiende desde las verduras hasta las frutas, pasando por los condimentos y los productos del mar."
-               data-de="Mit über 50 Jahren Erfahrung ist VITAL zu einem Schlüsselakteur im Konservenhandel in Frankreich geworden. Unsere Expertise erstreckt sich von Gemüse bis Obst, einschließlich Gewürzen und Meeresprodukten."
-               data-pt="Com mais de 50 anos de experiência, a VITAL tornou-se um ator-chave no comércio de conservas alimentares na França. Nossa expertise se estende de vegetais a frutas, incluindo condimentos e produtos do mar."
-            >
-                Forte de son expérience de plus de 50 ans, VITAL est devenue un acteur incontournable dans le négoce de conserves alimentaires en France. Notre expertise s'étend des légumes aux fruits, en passant par les condiments et les produits de la mer.
-            </p>
-            <p data-fr="Respecter nos engagements, garantir la sécurité de nos produits, maîtriser les processus et offrir le meilleur rapport qualité-prix sont au centre de notre démarche. Au cœur de nos valeurs se trouve l'innovation, qui nous conduit à commercialiser toujours plus de nouveaux produits, à explorer de nouveaux modes de consommation comme le Bio, afin de dynamiser le marché de la conserve alimentaire."
-               data-en="Respecting our commitments, ensuring the safety of our products, mastering processes and offering the best value for money are at the center of our approach. At the heart of our values is innovation, which leads us to market more and more new products, to explore new consumption patterns such as organic products, in order to energize the canned food market."
-               data-it="Rispettare i nostri impegni, garantire la sicurezza dei nostri prodotti, padroneggiare i processi e offrire il miglior rapporto qualità-prezzo sono al centro del nostro approccio. Al centro dei nostri valori c'è l'innovazione, che ci porta a commercializzare sempre più nuovi prodotti, ad esplorare nuovi modelli di consumo come il biologico, al fine di dinamizzare il mercato delle conserve alimentari."
-               data-es="Respetar nuestros compromisos, garantizar la seguridad de nuestros productos, dominar los procesos y ofrecer la mejor relación calidad-precio están en el centro de nuestro enfoque. En el corazón de nuestros valores está la innovación, que nos lleva a comercializar cada vez más productos nuevos, a explorar nuevos patrones de consumo como los productos orgánicos, para dinamizar el mercado de las conservas alimentarias."
-               data-de="Die Einhaltung unserer Verpflichtungen, die Gewährleistung der Sicherheit unserer Produkte, die Beherrschung der Prozesse und das beste Preis-Leistungs-Verhältnis stehen im Mittelpunkt unseres Ansatzes. Im Herzen unserer Werte steht Innovation, die uns dazu führt, immer mehr neue Produkte zu vermarkten, neue Verbrauchsmuster wie Bio-Produkte zu erkunden, um den Konservenmarkt zu beleben."
-               data-pt="Respeitar nossos compromissos, garantir a segurança de nossos produtos, dominar os processos e oferecer o melhor custo-benefício estão no centro da nossa abordagem. No coração de nossos valores está a inovação, que nos leva a comercializar cada vez mais produtos novos, a explorar novos padrões de consumo como produtos orgânicos, a fim de dinamizar o mercado de conservas alimentares."
-            >
-                Respecter nos engagements, garantir la sécurité de nos produits, maîtriser les processus et offrir le meilleur rapport qualité-prix sont au centre de notre démarche. Au cœur de nos valeurs se trouve l'innovation, qui nous conduit à commercialiser toujours plus de nouveaux produits, à explorer de nouveaux modes de consommation comme le Bio, afin de dynamiser le marché de la conserve alimentaire.
-            </p>
-        </section>
-        <section id="contact">
-            <h2 data-fr="Contactez-nous" data-en="Contact Us" data-it="Contattateci" data-es="Contáctenos" data-de="Kontaktieren Sie uns" data-pt="Entre em contato">Contactez-nous</h2>
-            <p data-fr="Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter." data-en="For more information about our products or for any inquiry, don't hesitate to contact us." data-it="Per ulteriori informazioni sui nostri prodotti o per qualsiasi richiesta, non esitate a contattarci." data-es="Para obtener más información sobre nuestros productos o para cualquier consulta, no dude en contactarnos." data-de="Für weitere Informationen über unsere Produkte oder für jegliche Anfragen zögern Sie nicht, uns zu kontaktieren." data-pt="Para mais informações sobre nossos produtos ou para qualquer pergunta, não hesite em nos contatar.">Pour plus d'informations sur nos produits ou pour toute demande, n'hésitez pas à nous contacter.</p>
-            <p>Tél : <a href="tel:+33442105400">+33 (0) 4 42 10 54 00</a></p>
-            <p>Mail : <a href="mailto:vital@vital.fr">vital@vital.fr</a></p>
-        </section>
-    </main>
-    <footer>
-        <p data-fr="© 2024 VITAL. Tous droits réservés." data-en="© 2024 VITAL. All rights reserved." data-it="© 2024 VITAL. Tutti i diritti riservati." data-es="© 2024 VITAL. Todos los derechos reservados." data-de="© 2024 VITAL. Alle Rechte vorbehalten." data-pt="© 2024 VITAL. Todos os direitos reservados.">© 2024 VITAL. Tous droits réservés.</p>
-    </footer>
 
-    <script>
-        function changeLanguage(lang) {
-            document.documentElement.lang = lang;
-            document.querySelectorAll('[data-fr]').forEach(el => {
-                const translation = el.getAttribute(`data-${lang}`);
-                if (translation) {
-                    el.textContent = translation;
-                }
-            });
-            const titles = {
-                'fr': "VITAL - Spécialiste en négoce de conserves alimentaires",
-                'en': "VITAL - Specialist in canned food trading",
-                'it': "VITAL - Specialista nel commercio di conserve alimentari",
-                'es': "VITAL - Especialista en comercio de conservas alimentarias",
-                'de': "VITAL - Spezialist für Konservenhandel",
-                'pt': "VITAL - Especialista em comércio de conservas alimentares"
-            };
-            document.title = titles[lang] || titles['fr'];
-        }
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </div>
+</header>
 
-        window.onload = function() {
-            const initialLang = 'fr';
-            document.getElementById('langSelect').value = initialLang;
-            changeLanguage(initialLang);
-        }
-    </script>
+<main id="main">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-text reveal">
+                    <span class="eyebrow"
+                          data-fr="Grossiste & importateur depuis 1966"
+                          data-en="Wholesale importer since 1966"
+                          data-es="Mayorista e importador desde 1966"
+                          data-zh="自1966年以来的批发商和进口商">Grossiste & importateur depuis 1966</span>
+                    <h1>
+                        <span data-fr="L'expertise du négoce alimentaire," data-en="The expertise of food trading," data-es="La experiencia del comercio alimentario," data-zh="食品贸易专业经验,">L'expertise du négoce alimentaire,</span>
+                        <em data-fr="au service des professionnels."
+                            data-en="serving professionals."
+                            data-es="al servicio de los profesionales."
+                            data-zh="服务专业客户。">au service des professionnels.</em>
+                    </h1>
+                    <p class="hero-subtitle"
+                       data-fr="Depuis près de 60 ans, VITAL est un grossiste et importateur incontournable de conserves alimentaires en France. Via notre marque Martin's International nous sélectionnons pour vous les meilleures références : olives, cornichons, câpres, thon, sardines, condiments, légumes, fruits, en conserves et en vrac."
+                       data-en="For nearly 60 years, VITAL has been a leading French wholesale importer of canned food. Through our Martin's International brand we source the very best for you: olives, gherkins, capers, tuna, sardines, condiments, vegetables, fruits — canned and in bulk."
+                       data-es="Desde hace casi 60 años, VITAL es un mayorista e importador imprescindible de conservas alimentarias en Francia. A través de nuestra marca Martin's International seleccionamos para usted las mejores referencias: aceitunas, pepinillos, alcaparras, atún, sardinas, condimentos, verduras, frutas, en conserva y a granel."
+                       data-zh="近60年来,VITAL一直是法国食品罐头领域不可或缺的批发商与进口商。通过我们的 Martin's International 品牌,为您精选最优质的产品:橄榄、酸黄瓜、刺山柑、金枪鱼、沙丁鱼、调味品、蔬菜、水果,罐装与散装兼备。">
+                        Depuis près de 60 ans, VITAL est un grossiste et importateur incontournable de conserves alimentaires en France. Via notre marque Martin's International nous sélectionnons pour vous les meilleures références : olives, cornichons, câpres, thon, sardines, condiments, légumes, fruits, en conserves et en vrac.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#produits-preview" class="btn btn-primary">
+                            <span data-fr="Découvrir nos produits" data-en="Discover our products" data-es="Descubrir nuestros productos" data-zh="查看我们的产品">Découvrir nos produits</span>
+                            <span class="arrow" aria-hidden="true">→</span>
+                        </a>
+                        <a href="#contact" data-modal="contact" class="btn btn-outline"
+                           data-fr="Nous contacter" data-en="Contact us" data-es="Contáctenos" data-zh="联系我们">Nous contacter</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <img src="images/catalogue-cover-2026.jpg"
+                         alt="Couverture du catalogue VITAL 2026"
+                         data-en-attr="alt:VITAL 2026 catalogue cover"
+                         data-fr-attr="alt:Couverture du catalogue VITAL 2026">
+                    <span class="hero-caption"
+                          data-fr="Catalogue 2026" data-en="2026 Catalogue" data-es="Catálogo 2026" data-zh="2026年产品目录">Catalogue 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ STATS ============================ -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="reveal">
+                    <div class="stat-number" data-count="7000" data-duration="3600">0</div>
+                    <div class="stat-label"
+                         data-fr="m² de stockage sur notre plateforme"
+                         data-en="m² of storage on our platform"
+                         data-es="m² de almacenamiento en nuestra plataforma"
+                         data-zh="平方米仓储面积">m² de stockage sur notre plateforme</div>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number" data-count="1000" data-suffix="+">0</div>
+                    <div class="stat-label"
+                         data-fr="containers réceptionnés par an"
+                         data-en="containers received per year"
+                         data-es="contenedores recibidos al año"
+                         data-zh="个集装箱年到货量">containers réceptionnés par an</div>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number" data-count="700">0</div>
+                    <div class="stat-label"
+                         data-fr="références produits au catalogue"
+                         data-en="product references in catalog"
+                         data-es="referencias de producto en catálogo"
+                         data-zh="产品目录条目">références produits au catalogue</div>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number" data-count="60" data-suffix="+">0</div>
+                    <div class="stat-label"
+                         data-fr="années d'ancienneté"
+                         data-en="years of experience"
+                         data-es="años de experiencia"
+                         data-zh="年行业经验">années d'ancienneté</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ PARTNERS ============================ -->
+    <section class="partners reveal">
+        <div class="container">
+            <div class="partners-label"
+                 data-fr="Nos marques" data-en="Our brands" data-es="Nuestras marcas" data-zh="我们的品牌">Nos marques</div>
+            <ul class="partners-list">
+                <li><img src="images/partners/aicha.png" alt="Aïcha" loading="lazy"></li>
+                <li><img src="images/partners/vitalys.png" alt="Vitaly's" loading="lazy"></li>
+                <li class="is-hero"><img src="images/partners/martins.svg" alt="Martin's International" loading="lazy"></li>
+                <li><img src="images/partners/luxeapers.png" alt="Luxeapers" loading="lazy"></li>
+                <li><img src="images/partners/nora.svg" alt="nora" loading="lazy"></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================ CATEGORIES ============================ -->
+    <section class="categories" id="produits-preview">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <span class="eyebrow"
+                          data-fr="Notre gamme" data-en="Our range" data-es="Nuestra gama" data-zh="我们的产品线">Notre gamme</span>
+                    <h2 data-fr="Une sélection rigoureuse, du champ à votre cuisine."
+                        data-en="A rigorous selection, from the field to your kitchen."
+                        data-es="Una selección rigurosa, del campo a su cocina."
+                        data-zh="严格甄选,从田间到您的厨房。">
+                        Une sélection rigoureuse, du champ à votre cuisine.
+                    </h2>
+                </div>
+                <p class="lead"
+                   data-fr="Nous travaillons main dans la main avec des producteurs et des conserveries de confiance, en France comme à l'international, pour vous garantir une qualité constante, une traçabilité totale et des approvisionnements maîtrisés tout au long de l'année."
+                   data-en="We work hand in hand with trusted producers and canneries, in France and internationally, to guarantee consistent quality, full traceability and reliable supply throughout the year."
+                   data-es="Trabajamos mano a mano con productores y conserveras de confianza, tanto en Francia como en el extranjero, para garantizarle una calidad constante, una trazabilidad total y un suministro fiable a lo largo de todo el año."
+                   data-zh="我们与法国及国际值得信赖的生产商与罐头厂紧密合作,为您保证稳定的品质、完整的可追溯性,以及全年可靠的供应。">
+                    Nous travaillons main dans la main avec des producteurs et des conserveries de confiance, en France comme à l'international, pour vous garantir une qualité constante, une traçabilité totale et des approvisionnements maîtrisés tout au long de l'année.
+                </p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card reveal">
+                    <div class="category-visual has-image">
+                        <img src="images/cat-mer.jpg" alt="Produits de la mer : thon Martin's en pochon et boîte, filets de thon à l'huile d'olive, sardines Safi" loading="lazy">
+                    </div>
+                    <div class="category-body">
+                        <h3 data-fr="Produits de la mer" data-en="Seafood products" data-es="Productos del mar" data-zh="海产品">Produits de la mer</h3>
+                        <p data-fr="Thon listao, thon albacore, sardine…"
+                           data-en="Skipjack tuna, yellowfin tuna, sardines…"
+                           data-es="Atún listado, atún aleta amarilla, sardina…"
+                           data-zh="鲣鱼、黄鳍金枪鱼、沙丁鱼…">
+                            Thon listao, thon albacore, sardine…
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category-card reveal">
+                    <div class="category-visual has-image">
+                        <img src="images/cat-condiments.jpg" alt="Condiments : ail Luxeapers, câpres fines Martin's, olives noires confites, cornichons aigres-doux" loading="lazy">
+                    </div>
+                    <div class="category-body">
+                        <h3 data-fr="Condiments" data-en="Condiments" data-es="Condimentos" data-zh="调味品">Condiments</h3>
+                        <p data-fr="Olives, câpres, cornichons, poivre vert, ail…"
+                           data-en="Olives, capers, gherkins, green peppercorns, garlic…"
+                           data-es="Aceitunas, alcaparras, pepinillos, pimienta verde, ajo…"
+                           data-zh="橄榄、刺山柑、酸黄瓜、青胡椒、大蒜…">
+                            Olives, câpres, cornichons, poivre vert, ail…
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category-card reveal">
+                    <div class="category-visual has-image">
+                        <img src="images/cat-fruits.png" alt="Conserves de fruits Martin's : ananas, litchis, poires au sirop, segments de pamplemousse" loading="lazy">
+                    </div>
+                    <div class="category-body">
+                        <h3 data-fr="Fruits en conserve" data-en="Canned fruits" data-es="Frutas en conserva" data-zh="罐装水果">Fruits en conserve</h3>
+                        <p data-fr="Ananas, litchis, poires, cocktail de fruits, pamplemousse, mandarines…"
+                           data-en="Pineapple, lychees, pears, fruit cocktail, grapefruit, mandarins…"
+                           data-es="Piña, lichis, peras, cóctel de frutas, pomelo, mandarinas…"
+                           data-zh="菠萝、荔枝、梨、什锦水果、西柚、橘子…">
+                            Ananas, litchis, poires, cocktail de fruits, pamplemousse, mandarines…
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category-card reveal">
+                    <div class="category-visual has-image">
+                        <img src="images/cat-legumes.png" alt="Conserves de légumes Martin's : cœurs de palmier, maïs doux, épis de maïs, oignons émincés" loading="lazy">
+                    </div>
+                    <div class="category-body">
+                        <h3 data-fr="Légumes en conserve" data-en="Canned vegetables" data-es="Verduras en conserva" data-zh="罐装蔬菜">Légumes en conserve</h3>
+                        <p data-fr="Artichaut, maïs, cœur de palmier, tomate, oignon, betterave…"
+                           data-en="Artichoke, corn, palm hearts, tomato, onion, beetroot…"
+                           data-es="Alcachofa, maíz, palmito, tomate, cebolla, remolacha…"
+                           data-zh="朝鲜蓟、玉米、棕榈芯、番茄、洋葱、甜菜…">
+                            Artichaut, maïs, cœur de palmier, tomate, oignon, betterave…
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category-card reveal">
+                    <div class="category-visual has-image is-airy">
+                        <img src="images/cat-vrac.png" alt="Produits en vrac : fûts d'olives, pochons Martin's olives vertes et noires, seau Vital olives à la grecque" loading="lazy">
+                    </div>
+                    <div class="category-body">
+                        <h3 data-fr="Produits en vrac" data-en="Bulk products" data-es="Productos a granel" data-zh="散装产品">Produits en vrac</h3>
+                        <p data-fr="Olives, cornichons, poivre vert, citrons beldi, ail en saumure, poivrons…"
+                           data-en="Olives, gherkins, green peppercorns, beldi lemons, garlic in brine, peppers…"
+                           data-es="Aceitunas, pepinillos, pimienta verde, limones beldi, ajos en salmuera, pimientos…"
+                           data-zh="橄榄、酸黄瓜、青胡椒、贝尔迪柠檬、盐渍大蒜、灯笼椒…">
+                            Olives, cornichons, poivre vert, citrons beldi, ail en saumure, poivrons…
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ ABOUT PREVIEW ============================ -->
+    <section class="about-preview" id="a-propos">
+        <div class="container">
+            <div class="split">
+                <div class="split-visual reveal">
+                    <!-- ============================================================
+                         Before/After comparison slider — VITAL 1980 ↔ 2026
+                         Base image (1980) is always rendered. The overlay (2026)
+                         is masked by a diagonal clip-path driven by --pos.
+                         ============================================================ -->
+                    <div class="ba-slider" data-pos="50">
+                        <!-- 1980 catalogue: BASE layer, always visible underneath -->
+                        <img class="ba-base"
+                             src="images/catalogue-vintage.jpg"
+                             alt="Catalogue VITAL Vitrolles Alimentation, 1980"
+                             draggable="false">
+
+                        <!-- 2026 catalogue: OVERLAY layer, clipped to reveal from right -->
+                        <div class="ba-overlay">
+                            <img src="images/catalogue-cover-2026.jpg"
+                                 alt="Catalogue VITAL édition 2026"
+                                 draggable="false">
+                        </div>
+
+                        <!-- Editorial labels: year + subtitle in glassmorphism cards -->
+                        <div class="ba-label ba-label--left" aria-hidden="true">
+                            <span class="ba-label__year">1980</span>
+                        </div>
+                        <div class="ba-label ba-label--right" aria-hidden="true">
+                            <span class="ba-label__year">2026</span>
+                        </div>
+
+                        <!-- Diagonal divider line (skewed via transform) -->
+                        <span class="ba-divider" aria-hidden="true"></span>
+
+                        <!-- Circular handle, perfectly round (not skewed) -->
+                        <button class="ba-handle" type="button"
+                                aria-label="Glisser pour comparer 1980 et 2026"
+                                data-fr-attr="aria-label:Glisser pour comparer 1980 et 2026"
+                                data-en-attr="aria-label:Drag to compare 1980 and 2026"
+                                data-es-attr="aria-label:Deslizar para comparar 1980 y 2026"
+                                data-zh-attr="aria-label:拖动以比较 1980 与 2026">
+                            <span class="ba-handle__arrow" aria-hidden="true">‹</span>
+                            <span class="ba-handle__arrow" aria-hidden="true">›</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="split-content reveal">
+                    <span class="eyebrow"
+                          data-fr="L'histoire VITAL" data-en="The VITAL story" data-es="La historia de VITAL" data-zh="VITAL的故事">L'histoire VITAL</span>
+                    <h2 data-fr="Six décennies d'expertise et de proximité."
+                        data-en="Six decades of expertise and proximity."
+                        data-es="Seis décadas de experiencia y proximidad."
+                        data-zh="六十年专业经验,始终贴近客户。">
+                        Six décennies d'expertise et de proximité.
+                    </h2>
+                    <p data-fr="Fondée en 1966, VITAL s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées."
+                       data-en="Founded in 1966, VITAL has carved out a leading position in the French canned food trading landscape."
+                       data-es="Fundada en 1966, VITAL se ha labrado un lugar destacado en el panorama francés del comercio de conservas apertizadas."
+                       data-zh="VITAL成立于1966年,在法国罐头食品贸易领域占据了一席之地。">
+                        Fondée en 1966, VITAL s'est forgée une place de choix dans le paysage français du négoce de conserves appertisées.
+                    </p>
+                    <p data-fr="Notre force : une sélection rigoureuse, des partenariats durables avec les conserveries, et une parfaite maîtrise des circuits d'import-export."
+                       data-en="Our strength: rigorous selection, lasting partnerships with canneries, and complete mastery of import-export channels."
+                       data-es="Nuestra fuerza: una selección rigurosa, asociaciones duraderas con las conserveras y un dominio perfecto de los circuitos de importación-exportación."
+                       data-zh="我们的优势:严谨的甄选、与罐头厂长期稳定的合作关系,以及对进出口流程的精准掌控。">
+                        Notre force : une sélection rigoureuse, des partenariats durables avec les conserveries, et une parfaite maîtrise des circuits d'import-export.
+                    </p>
+                    <p data-fr="Au quotidien, nous mettons un point d'honneur à respecter nos engagements, garantir la sécurité de nos produits, et offrir le meilleur rapport qualité-prix à nos clients professionnels."
+                       data-en="Every day, we make it a point of honor to respect our commitments, guarantee the safety of our products, and offer the best value for money to our professional customers."
+                       data-es="A diario, ponemos especial empeño en cumplir nuestros compromisos, garantizar la seguridad de nuestros productos y ofrecer la mejor relación calidad-precio a nuestros clientes profesionales."
+                       data-zh="我们始终秉持职业操守,履行承诺,保障产品安全,为专业客户提供最优的性价比。">
+                        Au quotidien, nous mettons un point d'honneur à respecter nos engagements, garantir la sécurité de nos produits, et offrir le meilleur rapport qualité-prix à nos clients professionnels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ VALUES ============================ -->
+    <section class="values" id="engagements">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <span class="eyebrow"
+                          data-fr="Nos engagements" data-en="Our commitments" data-es="Nuestros compromisos" data-zh="我们的承诺">Nos engagements</span>
+                    <h2 data-fr="Trois piliers, une exigence constante."
+                        data-en="Three pillars, one constant requirement."
+                        data-es="Tres pilares, una exigencia constante."
+                        data-zh="三大支柱,始终如一的高标准。">
+                        Trois piliers, une exigence constante.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card reveal">
+                    <span class="num">01</span>
+                    <h3 data-fr="Sélection qualité" data-en="Quality selection" data-es="Selección de calidad" data-zh="品质甄选">Sélection qualité</h3>
+                    <p data-fr="Chaque référence est choisie pour son origine, son goût et sa régularité. Nos cahiers des charges sont stricts et nos partenaires audités."
+                       data-en="Every reference is selected for its origin, taste and consistency. Our specifications are strict and our partners audited."
+                       data-es="Cada referencia se elige por su origen, su sabor y su regularidad. Nuestros pliegos de condiciones son estrictos y nuestros socios son auditados."
+                       data-zh="每款产品均依据其产地、风味与品质稳定性精心挑选。我们的规格要求严格,合作伙伴均经过审核。">
+                        Chaque référence est choisie pour son origine, son goût et sa régularité. Nos cahiers des charges sont stricts et nos partenaires audités.
+                    </p>
+                </div>
+                <div class="value-card reveal">
+                    <span class="num">02</span>
+                    <h3 data-fr="Traçabilité totale" data-en="Full traceability" data-es="Trazabilidad total" data-zh="全程可追溯">Traçabilité totale</h3>
+                    <p data-fr="De la conserverie à votre quai de livraison, chaque lot est tracé. Nous garantissons sécurité sanitaire et conformité réglementaire."
+                       data-en="From cannery to your loading dock, every batch is traced. We guarantee food safety and regulatory compliance."
+                       data-es="De la conservera a su muelle de entrega, cada lote es trazado. Garantizamos seguridad sanitaria y conformidad reglamentaria."
+                       data-zh="从罐头厂到您的收货码头,每一批货物均可追溯。我们保证食品安全与法规合规。">
+                        De la conserverie à votre quai de livraison, chaque lot est tracé. Nous garantissons sécurité sanitaire et conformité réglementaire.
+                    </p>
+                </div>
+                <div class="value-card reveal">
+                    <span class="num">03</span>
+                    <h3 data-fr="Proximité client" data-en="Customer proximity" data-es="Proximidad con el cliente" data-zh="贴近客户"
+                        data-es="Proximidad con el cliente" data-zh="贴近客户">Proximité client</h3>
+                    <p data-fr="Une équipe à taille humaine, réactive et à l'écoute. Nous construisons des partenariats sur le long terme avec nos clients professionnels."
+                       data-en="A close-knit, responsive and attentive team. We build long-term partnerships with our professional clients."
+                       data-es="Un equipo a escala humana, reactivo y atento. Construimos colaboraciones duraderas con nuestros clientes profesionales."
+                       data-zh="紧密协作、响应迅速、用心倾听的小型团队,与专业客户建立长期合作伙伴关系。"
+                       data-es="Un equipo a escala humana, reactivo y atento. Construimos colaboraciones duraderas con nuestros clientes profesionales."
+                       data-zh="紧密协作、响应迅速、用心倾听的小型团队,与专业客户建立长期合作伙伴关系。">
+                        Une équipe à taille humaine, réactive et à l'écoute. Nous construisons des partenariats sur le long terme avec nos clients professionnels.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ============ Certifications band ============ -->
+            <div class="certifications reveal">
+                <div class="certifications-label"
+                     data-fr="Nos certifications" data-en="Our certifications" data-es="Nuestras certificaciones" data-zh="我们的认证"
+                     data-es="Nuestras certificaciones" data-zh="我们的认证">Nos certifications</div>
+                <ul class="certifications-list">
+                    <li><img src="images/certifications/ab-bio.svg"     alt="Agriculture Biologique (AB)"      loading="lazy"></li>
+                    <li><img src="images/certifications/eu-organic.svg" alt="EU Organic Farming"               loading="lazy"></li>
+                    <li><img src="images/certifications/ecocert.png"    alt="Ecocert"                          loading="lazy"></li>
+                    <li><img src="images/certifications/amfori.webp"    alt="amfori — Trade with Purpose"      loading="lazy"></li>
+                    <li><img src="images/certifications/tuna-safe.svg"  alt="Friend of the Sea — Tuna Safe"    loading="lazy"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ PLATEFORME / MAP ============================ -->
+    <section class="location" id="plateforme">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <span class="eyebrow"
+                          data-fr="Notre plateforme" data-en="Our platform"
+                          data-es="Nuestra plataforma" data-zh="我们的平台">Notre plateforme</span>
+                    <h2 data-fr="Au cœur de la Provence, à 30 minutes du port de Marseille, 1 heure du port de Fos-Sur-Mer."
+                        data-en="At the heart of Provence, 30 minutes from the port of Marseille and 1 hour from the port of Fos-Sur-Mer."
+                        data-es="En el corazón de Provenza, a 30 minutos del puerto de Marsella y a 1 hora del puerto de Fos-Sur-Mer."
+                        data-zh="位于普罗旺斯中心,距马赛港30分钟车程,距福斯滨海港1小时车程。">
+                        Au cœur de la Provence, à 30 minutes du port de Marseille, 1 heure du port de Fos-Sur-Mer.
+                    </h2>
+                </div>
+                <p class="lead"
+                   data-fr="7 000 m² de plateforme logistique à Vitrolles (ZI Les Estroublans), 1 000 containers réceptionnés par an, livraisons France entière et export. Notre emplacement au pied des ports de Marseille-Fos nous permet de réceptionner des marchandises du monde entier et de les acheminer vers nos clients en flux tendu."
+                   data-en="7,000 m² logistics platform in Vitrolles (ZI Les Estroublans), 1,000 containers received per year, deliveries across France and export. Our location at the foot of the Marseille-Fos ports allows us to receive goods from around the world and dispatch them to our customers just-in-time."
+                   data-es="Plataforma logística de 7 000 m² en Vitrolles (ZI Les Estroublans), 1 000 contenedores recibidos al año, entregas en toda Francia y exportación. Nuestra ubicación a pie de los puertos de Marsella-Fos nos permite recibir mercancías del mundo entero y enviarlas a nuestros clientes en flujo tenso."
+                   data-zh="位于沃特罗勒(Vitrolles)Estroublans 工业区的 7 000 平方米物流平台,年到货 1 000 个集装箱,覆盖法国全境配送及出口业务。地处马赛-福斯港群旁,使我们能及时接收来自世界各地的货物并以零库存方式发往客户。">
+                    7 000 m² de plateforme logistique à Vitrolles (ZI Les Estroublans), 1 000 containers réceptionnés par an, livraisons France entière et export. Notre emplacement au pied des ports de Marseille-Fos nous permet de réceptionner des marchandises du monde entier et de les acheminer vers nos clients en flux tendu.
+                </p>
+            </div>
+
+            <div class="location-grid reveal">
+                <!-- Carte Leaflet — initialisée dans js/main.js via initLocationMap() -->
+                <div id="vital-map" class="location-map"
+                     role="img"
+                     aria-label="Carte interactive — VITAL, 17 rue de Copenhague, ZI Les Estroublans, 13127 Vitrolles, Provence, France">
+                    <noscript>
+                        <a href="https://www.openstreetmap.org/?mlat=43.4565&amp;mlon=5.2410#map=12/43.4565/5.2410"
+                           target="_blank" rel="noopener">Voir l'emplacement de VITAL sur OpenStreetMap</a>
+                    </noscript>
+                </div>
+
+                <aside class="location-card">
+                    <span class="location-card__label"
+                          data-fr="Siège & plateforme logistique"
+                          data-en="Headquarters & logistics platform"
+                          data-es="Sede y plataforma logística"
+                          data-zh="总部与物流平台">Siège & plateforme logistique</span>
+                    <h3 class="location-card__name">VITAL</h3>
+                    <address class="location-card__address">
+                        17, rue de Copenhague<br>
+                        ZI Les Estroublans<br>
+                        13127 Vitrolles, France
+                    </address>
+                    <ul class="location-card__contact">
+                        <li>
+                            <span class="location-card__tag"
+                                  data-fr="Téléphone" data-en="Phone"
+                                  data-es="Teléfono" data-zh="电话">Téléphone</span>
+                            <a href="tel:+33442105400">+33&nbsp;(0)4&nbsp;42&nbsp;10&nbsp;54&nbsp;00</a>
+                        </li>
+                        <li>
+                            <span class="location-card__tag">Email</span>
+                            <a href="mailto:vital@vital.fr">vital@vital.fr</a>
+                        </li>
+                        <li>
+                            <span class="location-card__tag"
+                                  data-fr="Horaires" data-en="Hours"
+                                  data-es="Horario" data-zh="营业时间">Horaires</span>
+                            <span data-fr="Lun–Ven · 8h30–17h30"
+                                  data-en="Mon–Fri · 8:30–17:30"
+                                  data-es="Lun–Vie · 8:30–17:30"
+                                  data-zh="周一至周五 · 8:30–17:30">Lun–Ven · 8h30–17h30</span>
+                        </li>
+                    </ul>
+                    <a class="btn btn-ghost location-card__dir"
+                       href="https://www.google.com/maps/dir/?api=1&destination=17+rue+de+Copenhague,+13127+Vitrolles,+France"
+                       target="_blank" rel="noopener"
+                       data-fr="Itinéraire ↗" data-en="Get directions ↗"
+                       data-es="Cómo llegar ↗" data-zh="路线指引 ↗">Itinéraire ↗</a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ CTA ============================ -->
+    <section class="cta-band">
+        <div class="container">
+            <div class="reveal">
+                <span class="eyebrow"
+                      data-fr="Un projet ? Une demande ?" data-en="A project? A request?" data-es="¿Un proyecto? ¿Una consulta?" data-zh="有项目?有需求?">Un projet ? Une demande ?</span>
+                <h2 data-fr="Parlons de vos besoins en conserves alimentaires."
+                    data-en="Let's discuss your canned food needs."
+                    data-es="Hablemos de sus necesidades en conservas alimentarias."
+                    data-zh="让我们聊聊您的食品罐头需求。">
+                    Parlons de vos besoins en conserves alimentaires.
+                </h2>
+                <p data-fr="Notre équipe est à votre disposition pour étudier votre demande, vous proposer les meilleures références et bâtir une collaboration durable."
+                   data-en="Our team is at your disposal to study your request, offer the best references and build a lasting collaboration."
+                   data-es="Nuestro equipo está a su disposición para estudiar su solicitud, proponerle las mejores referencias y construir una colaboración duradera."
+                   data-zh="我们的团队随时为您服务,研究您的需求,为您推荐最佳产品,建立长期合作。">
+                    Notre équipe est à votre disposition pour étudier votre demande, vous proposer les meilleures références et bâtir une collaboration durable.
+                </p>
+                <a href="#contact" data-modal="contact" class="btn btn-primary">
+                    <span data-fr="Demander un devis" data-en="Request a quote" data-es="Solicitar un presupuesto" data-zh="获取报价">Demander un devis</span>
+                    <span class="arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ CONTACT MODAL ============================ -->
+    <!-- Native <dialog>: focus trap + Esc to close are handled by the browser.
+         Action points to FormSubmit.co — on first submit, vital@vital.fr
+         receives an activation email. After clicking that link, every future
+         submission lands in vital@vital.fr inbox with jadad@vital.fr in CC. -->
+    <dialog id="contact-modal" class="contact-modal" aria-labelledby="contact-modal-title">
+        <button class="contact-modal__close" type="button" aria-label="Fermer"
+                data-fr-attr="aria-label:Fermer" data-en-attr="aria-label:Close" data-es-attr="aria-label:Cerrar" data-zh-attr="aria-label:关闭"
+                data-modal-close>×</button>
+
+        <div class="contact-modal__panel">
+            <header class="contact-modal__head">
+                <span class="eyebrow"
+                      data-fr="Écrivez-nous" data-en="Write to us" data-es="Escríbanos" data-zh="联系我们">Écrivez-nous</span>
+                <h2 id="contact-modal-title"
+                    data-fr="Parlons de votre projet."
+                    data-en="Let's discuss your project."
+                    data-es="Hablemos de su proyecto."
+                    data-zh="谈谈您的项目。">
+                    Parlons de votre projet.
+                </h2>
+                <p data-fr="Décrivez votre besoin, nous revenons vers vous sous 24h ouvrées."
+                   data-en="Describe your need — we'll get back to you within one business day."
+                   data-es="Describa su necesidad, le responderemos en 24 h laborables."
+                   data-zh="请描述您的需求,我们将在一个工作日内回复您。">
+                    Décrivez votre besoin, nous revenons vers vous sous 24h ouvrées.
+                </p>
+            </header>
+
+            <form class="contact-form"
+                  action="https://formsubmit.co/vital@vital.fr"
+                  method="POST"
+                  novalidate>
+                <!-- FormSubmit config (hidden) -->
+                <input type="hidden" name="_cc" value="jadad@vital.fr">
+                <input type="hidden" name="_subject" value="Nouveau message via vital.fr">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse"
+                       value="Bonjour, nous avons bien reçu votre message. L'équipe VITAL vous recontacte sous 24h ouvrées. — vital.fr">
+                <input type="hidden" name="_next" value="https://vital.fr/?contact=ok">
+                <!-- Honeypot — bots fill this; humans don't see it -->
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off"
+                       style="display:none" aria-hidden="true">
+
+                <div class="contact-form__row">
+                    <label class="contact-form__field">
+                        <span data-fr="Nom complet *" data-en="Full name *" data-es="Nombre completo *" data-zh="全名 *">Nom complet *</span>
+                        <input type="text" name="Nom" required autocomplete="name">
+                    </label>
+                    <label class="contact-form__field">
+                        <span data-fr="Société *" data-en="Company *" data-es="Empresa *" data-zh="公司 *">Société *</span>
+                        <input type="text" name="Société" required autocomplete="organization">
+                    </label>
+                </div>
+
+                <div class="contact-form__row">
+                    <label class="contact-form__field">
+                        <span data-fr="Email *" data-en="Email *" data-es="Correo electrónico *" data-zh="电子邮箱 *">Email *</span>
+                        <input type="email" name="Email" required autocomplete="email">
+                    </label>
+                    <label class="contact-form__field">
+                        <span data-fr="Téléphone" data-en="Phone" data-es="Teléfono" data-zh="电话">Téléphone</span>
+                        <input type="tel" name="Téléphone" autocomplete="tel">
+                    </label>
+                </div>
+
+                <label class="contact-form__field">
+                    <span data-fr="Sujet" data-en="Subject" data-es="Asunto" data-zh="主题">Sujet</span>
+                    <select name="Sujet">
+                        <option data-fr="Demande de devis" data-en="Quote request" data-es="Solicitud de presupuesto" data-zh="报价请求">Demande de devis</option>
+                        <option data-fr="Renseignement produit" data-en="Product inquiry" data-es="Información de producto" data-zh="产品咨询">Renseignement produit</option>
+                        <option data-fr="Partenariat" data-en="Partnership" data-es="Colaboración comercial" data-zh="合作伙伴关系">Partenariat</option>
+                        <option data-fr="Autre" data-en="Other" data-es="Otro" data-zh="其他">Autre</option>
+                    </select>
+                </label>
+
+                <label class="contact-form__field">
+                    <span data-fr="Message *" data-en="Message *" data-es="Mensaje *" data-zh="留言 *">Message *</span>
+                    <textarea name="Message" rows="5" required
+                              data-fr-attr="placeholder:Volumes, références, délais, zones de livraison…"
+                              data-en-attr="placeholder:Volumes, references, lead times, delivery zones…"
+                              data-es-attr="placeholder:Volúmenes, referencias, plazos, zonas de entrega…"
+                              data-zh-attr="placeholder:数量、产品编号、交期、配送区域…"
+                              placeholder="Volumes, références, délais, zones de livraison…"></textarea>
+                </label>
+
+                <div class="contact-form__footer">
+                    <p class="contact-form__legal"
+                       data-fr="* Champs requis. Vos données ne sont utilisées que pour répondre à votre demande."
+                       data-en="* Required fields. Your data is only used to answer your request."
+                       data-es="* Campos obligatorios. Sus datos solo se utilizan para responder a su consulta."
+                       data-zh="* 必填项。您的资料仅用于回复您的咨询。">
+                        * Champs requis. Vos données ne sont utilisées que pour répondre à votre demande.
+                    </p>
+                    <button type="submit" class="btn btn-primary">
+                        <span data-fr="Envoyer le message" data-en="Send message" data-es="Enviar el mensaje" data-zh="发送留言">Envoyer le message</span>
+                        <span class="arrow" aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <p class="contact-form__direct">
+                    <span data-fr="Ou par email direct :" data-en="Or by direct email:" data-es="O por correo directo:" data-zh="或直接发送邮件:">Ou par email direct :</span>
+                    <a href="mailto:vital@vital.fr">vital@vital.fr</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="tel:+33442105400">+33 (0)4 42 10 54 00</a>
+                </p>
+            </form>
+        </div>
+    </dialog>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer" id="bas">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo-vital.svg" alt="VITAL">
+                <p class="footer-tagline"
+                   data-fr="Grossiste et importateur de conserves alimentaires depuis 1966 — marque Martin's International. Olives, cornichons, câpres, thon, sardines, condiments, légumes, fruits et vrac."
+                   data-en="Wholesale importer of canned food since 1966 — Martin's International brand. Olives, gherkins, capers, tuna, sardines, condiments, vegetables, fruits and bulk products."
+                   data-es="Mayorista e importador de conservas desde 1966 — marca Martin's International. Aceitunas, pepinillos, alcaparras, atún, sardinas, condimentos, verduras, frutas y a granel."
+                   data-zh="自1966年以来的食品罐头批发商和进口商 — Martin's International 品牌。橄榄、酸黄瓜、刺山柑、金枪鱼、沙丁鱼、调味品、蔬菜、水果及散装产品。">
+                    Grossiste et importateur de conserves alimentaires depuis 1966 — marque Martin's International. Olives, cornichons, câpres, thon, sardines, condiments, légumes, fruits et vrac.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4 data-fr="Navigation" data-en="Navigation" data-es="Navegación" data-zh="导航">Navigation</h4>
+                <ul>
+                    <li><a href="#top" data-scroll-top data-fr="Accueil" data-en="Home" data-es="Inicio" data-zh="首页">Accueil</a></li>
+                    <li><a href="#produits-preview" data-fr="Notre gamme" data-en="Our range" data-es="Nuestra gama" data-zh="我们的产品线">Notre gamme</a></li>
+                    <li><a href="#a-propos" data-fr="Notre histoire" data-en="Our story" data-es="Nuestra historia" data-zh="我们的故事">Notre histoire</a></li>
+                    <li><a href="#engagements" data-fr="Nos engagements" data-en="Our commitments" data-es="Nuestros compromisos" data-zh="我们的承诺">Nos engagements</a></li>
+                    <li><a href="#contact" data-modal="contact" data-fr="Nous contacter" data-en="Contact us" data-es="Contáctenos" data-zh="联系我们">Nous contacter</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-col--contact">
+                <h4 data-fr="Contact" data-en="Contact" data-es="Contacto" data-zh="联系我们">Contact</h4>
+                <ul>
+                    <li><a href="tel:+33442105400">+33 (0)4 42 10 54 00</a></li>
+                    <li><a href="mailto:vital@vital.fr">vital@vital.fr</a></li>
+                    <li class="footer-address">
+                        17, rue de Copenhague<br>
+                        ZI Les Estroublans<br>
+                        13127 Vitrolles, France
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col footer-col--legal">
+                <h4 data-fr="Mentions légales" data-en="Legal" data-es="Información legal" data-zh="法律信息">Mentions légales</h4>
+                <ul class="footer-legal">
+                    <li>SAS au capital de 960 000 €</li>
+                    <li>SIREN <span class="footer-legal__num">636 680 415</span></li>
+                    <li>RCS Salon-de-Provence</li>
+                    <li>TVA <span class="footer-legal__num">FR 95 636 680 415</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span data-fr="© 2026 VITAL. Tous droits réservés."
+                  data-en="© 2026 VITAL. All rights reserved."
+                  data-es="© 2026 VITAL. Todos los derechos reservados."
+                  data-zh="© 2026 VITAL。版权所有。">© 2026 VITAL. Tous droits réservés.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin="" defer></script>
+<script src="js/main.js"></script>
 </body>
 </html>

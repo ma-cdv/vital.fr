@@ -1,7 +1,11 @@
 # robots.txt pour vital.fr
+# VITAL — Grossiste importateur de conserves alimentaires depuis 1966
 
 User-agent: *
 Allow: /
+
+# Bloque les dossiers de travail / sources
+Disallow: /_assets/
 
 # Sitemap
 Sitemap: https://vital.fr/sitemap.xml
