@@ -582,11 +582,11 @@
                     </h2>
                 </div>
                 <p class="lead"
-                   data-fr="7 000 m² de plateforme logistique à Vitrolles (ZI Les Estroublans), 1 000 containers réceptionnés par an, livraisons France entière et export. Notre emplacement au pied des ports de Marseille-Fos nous permet de réceptionner des marchandises du monde entier et de les acheminer vers nos clients en flux tendu."
-                   data-en="7,000 m² logistics platform in Vitrolles (ZI Les Estroublans), 1,000 containers received per year, deliveries across France and export. Our location at the foot of the Marseille-Fos ports allows us to receive goods from around the world and dispatch them to our customers just-in-time."
-                   data-es="Plataforma logística de 7 000 m² en Vitrolles (ZI Les Estroublans), 1 000 contenedores recibidos al año, entregas en toda Francia y exportación. Nuestra ubicación a pie de los puertos de Marsella-Fos nos permite recibir mercancías del mundo entero y enviarlas a nuestros clientes en flujo tenso."
-                   data-zh="位于沃特罗勒(Vitrolles)Estroublans 工业区的 7 000 平方米物流平台,年到货 1 000 个集装箱,覆盖法国全境配送及出口业务。地处马赛-福斯港群旁,使我们能及时接收来自世界各地的货物并以零库存方式发往客户。">
-                    7 000 m² de plateforme logistique à Vitrolles (ZI Les Estroublans), 1 000 containers réceptionnés par an, livraisons France entière et export. Notre emplacement au pied des ports de Marseille-Fos nous permet de réceptionner des marchandises du monde entier et de les acheminer vers nos clients en flux tendu.
+                   data-fr="7 000 m² de plateforme logistique à Vitrolles (ZI Les Estroublans), 1 000 containers réceptionnés par an, livraisons France entière et export. Notre emplacement stratégique au pied des ports de Marseille-Fos nous permet de réceptionner des marchandises du monde entier et de les acheminer vers nos clients en flux tendu."
+                   data-en="7,000 m² logistics platform in Vitrolles (ZI Les Estroublans), 1,000 containers received per year, deliveries across France and export. Our strategic location at the foot of the Marseille-Fos ports allows us to receive goods from around the world and dispatch them to our customers just-in-time."
+                   data-es="Plataforma logística de 7 000 m² en Vitrolles (ZI Les Estroublans), 1 000 contenedores recibidos al año, entregas en toda Francia y exportación. Nuestra ubicación estratégica a pie de los puertos de Marsella-Fos nos permite recibir mercancías del mundo entero y enviarlas a nuestros clientes en flujo tenso."
+                   data-zh="位于沃特罗勒(Vitrolles)Estroublans 工业区的 7 000 平方米物流平台,年到货 1 000 个集装箱,覆盖法国全境配送及出口业务。我们战略性的地理位置紧邻马赛-福斯港群,使我们能及时接收来自世界各地的货物并以零库存方式发往客户。">
+                    7 000 m² de plateforme logistique à Vitrolles (ZI Les Estroublans), 1 000 containers réceptionnés par an, livraisons France entière et export. Notre emplacement stratégique au pied des ports de Marseille-Fos nous permet de réceptionner des marchandises du monde entier et de les acheminer vers nos clients en flux tendu.
                 </p>
             </div>
 
@@ -700,19 +700,19 @@
             </header>
 
             <form class="contact-form"
-                  action="https://formsubmit.co/vital@vital.fr"
+                  action="https://api.web3forms.com/submit"
                   method="POST"
                   novalidate>
-                <!-- FormSubmit config (hidden) -->
-                <input type="hidden" name="_cc" value="jadad@vital.fr">
-                <input type="hidden" name="_subject" value="Nouveau message via vital.fr">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_autoresponse"
-                       value="Bonjour, nous avons bien reçu votre message. L'équipe VITAL vous recontacte sous 24h ouvrées. — vital.fr">
-                <input type="hidden" name="_next" value="https://vital.fr/?contact=ok">
+                <!-- Web3Forms config (hidden) -->
+                <!-- Web3Forms access_key. Recipient is configured server-side
+                     in the Web3Forms dashboard (recipient = jadad@vital.fr).
+                     Every visible "vital@vital.fr" mention on the site stays. -->
+                <input type="hidden" name="access_key" value="eb6bc7da-0cfd-4d66-bfed-0c7e9e4caec3">
+                <input type="hidden" name="from_name" value="vital.fr — formulaire de contact">
+                <input type="hidden" name="subject" value="Nouveau message via vital.fr">
+                <input type="hidden" name="redirect" value="https://vital.fr/?contact=ok">
                 <!-- Honeypot — bots fill this; humans don't see it -->
-                <input type="text" name="_honey" tabindex="-1" autocomplete="off"
+                <input type="checkbox" name="botcheck" tabindex="-1"
                        style="display:none" aria-hidden="true">
 
                 <div class="contact-form__row">
@@ -722,7 +722,7 @@
                     </label>
                     <label class="contact-form__field">
                         <span data-fr="Société *" data-en="Company *" data-es="Empresa *" data-zh="公司 *">Société *</span>
-                        <input type="text" name="Société" required autocomplete="organization">
+                        <input type="text" name="Societe" required autocomplete="organization">
                     </label>
                 </div>
 
@@ -733,7 +733,7 @@
                     </label>
                     <label class="contact-form__field">
                         <span data-fr="Téléphone" data-en="Phone" data-es="Teléfono" data-zh="电话">Téléphone</span>
-                        <input type="tel" name="Téléphone" autocomplete="tel">
+                        <input type="tel" name="Telephone" autocomplete="tel">
                     </label>
                 </div>
 

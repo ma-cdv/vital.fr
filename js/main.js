@@ -325,9 +325,9 @@ function initScrollTop() {
 
 // --- Contact modal -----------------------------------------
 // Wires every [data-modal="contact"] to open the <dialog id="contact-modal">.
-// Form posts to FormSubmit.co (real email delivery from a static site). If
-// JS-less or the request fails, a mailto: fallback opens the user's mail
-// client pre-filled with the same payload.
+// Form posts to Web3Forms (https://web3forms.com) — real email delivery from
+// a static site, no backend. On any failure, a mailto: fallback opens the
+// user's mail client pre-filled with the same payload.
 function initContactModal() {
   const dialog = document.getElementById('contact-modal');
   if (!dialog) return;
@@ -367,9 +367,16 @@ function initContactModal() {
       e.preventDefault();
 
       const data = new FormData(form);
+      // Strip Web3Forms config fields from the payload we'd reuse in the
+      // mailto: fallback. Anything still in `data` (incl. access_key) gets
+      // POSTed as-is.
+      const HIDDEN_KEYS = new Set([
+        'access_key', 'from_name', 'subject', 'cc', 'bcc',
+        'redirect', 'botcheck', 'replyto',
+      ]);
       const payload = {};
       for (const [k, v] of data.entries()) {
-        if (!k.startsWith('_') && v) payload[k] = v;
+        if (!HIDDEN_KEYS.has(k) && v) payload[k] = v;
       }
 
       const submitBtn = form.querySelector('button[type="submit"]');
@@ -381,7 +388,11 @@ function initContactModal() {
           headers: { 'Accept': 'application/json' },
           body: data,
         });
-        if (!res.ok) throw new Error('FormSubmit returned ' + res.status);
+        // Web3Forms returns 200 with { success: true, message: "..." }
+        const json = await res.json().catch(() => ({}));
+        if (!res.ok || json.success === false) {
+          throw new Error('Web3Forms: ' + (json.message || res.status));
+        }
         const en = document.documentElement.lang === 'en';
         form.innerHTML = `
           <div class="contact-form__success" style="text-align:center;padding:24px 0;">
@@ -407,7 +418,7 @@ function initContactModal() {
     });
   }
 
-  // Confirmation chip after FormSubmit redirect (?contact=ok)
+  // Confirmation chip after Web3Forms redirect (?contact=ok)
   if (new URLSearchParams(location.search).get('contact') === 'ok') {
     const en = document.documentElement.lang === 'en';
     const flash = document.createElement('div');

@@ -319,14 +319,16 @@ section { padding: var(--gap-xl) 0; }
   .nav-toggle { display: block; }
   .nav-links {
     position: fixed;
-    inset: 64px 0 0 0;
+    inset: 0;                              /* full-viewport overlay */
     background: var(--bg);
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem 1.5rem;
+    padding: 5.5rem 1.5rem 2rem;           /* leaves room for the sticky header on top */
     gap: 1.5rem;
     transform: translateX(100%);
     transition: transform 0.3s ease;
+    z-index: 90;                           /* above page content (slider, map…) but below the header */
+    overflow-y: auto;                       /* scroll if menu items overflow on small screens */
   }
   .nav-links.open { transform: translateX(0); }
   .nav-links a { font-size: 1.25rem; }
@@ -649,6 +651,9 @@ section { padding: var(--gap-xl) 0; }
 
 .categories {
   background: var(--bg);
+  /* Tighter top — the partners band above already brings a divider rule,
+     so the full 6rem felt floating. 4rem reads better. */
+  padding-top: 4rem;
 }
 
 .category-grid {
@@ -825,14 +830,18 @@ section { padding: var(--gap-xl) 0; }
   isolation: isolate;                      /* keeps clip-path within bounds */
 }
 
-/* Both images: contained inside the frame, never cropped, smooth letterbox */
+/* Both images fill the frame edge-to-edge (no visible cream bands).
+   2026 cover (2121×3000 = 0.707) matches the container ratio (1414/2000)
+   exactly — perfect fit. 1980 (slightly more landscape) gets a tiny side
+   crop (~3%) but the center content stays intact. */
 .ba-base,
 .ba-overlay > img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   display: block;
   pointer-events: none;
   user-select: none;
