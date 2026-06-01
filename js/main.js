@@ -7,10 +7,13 @@ const STORAGE_KEY = 'vital_lang';
 const SUPPORTED_LANGS = ['fr', 'en', 'es', 'zh'];
 
 function detectInitialLang() {
+  // Always default to FR on first visit — including for crawlers (Googlebot,
+  // Bingbot…). Auto-detecting navigator.language used to flip the page to EN
+  // for English-locale bots, which then indexed the English title in SERPs.
+  // Users who explicitly pick another language have their choice persisted.
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored && SUPPORTED_LANGS.includes(stored)) return stored;
-  const browser = (navigator.language || 'fr').slice(0, 2);
-  return SUPPORTED_LANGS.includes(browser) ? browser : 'fr';
+  return 'fr';
 }
 
 function applyLang(lang) {

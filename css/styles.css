@@ -215,6 +215,11 @@ section { padding: var(--gap-xl) 0; }
 #plateforme {
   scroll-margin-top: 90px;
 }
+/* For #engagements, the id sits on the inner section-header (not the
+   <section>), so the section's own top padding isn't traversed before
+   the landing point — keeps the eyebrow tight under the sticky header.
+   Header height ≈ 119px → +15px breathing = 135px. */
+#engagements { scroll-margin-top: 135px; }
 
 .nav {
   display: flex;
